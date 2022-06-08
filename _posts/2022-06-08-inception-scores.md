@@ -1,4 +1,5 @@
 ---
+layout: single
 title: "Inception scores"
 date: 2022-06-08 17:00:00
 categories: Deep learning
