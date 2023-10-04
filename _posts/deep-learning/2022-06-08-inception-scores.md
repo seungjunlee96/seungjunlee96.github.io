@@ -2,7 +2,8 @@
 layout: single
 title: "Inception scores"
 data: 2022-06-08 17:00:00
-categories: Deep learning
+categories: deep-learning
+tags: ""
 ---
 
 # Inception Score

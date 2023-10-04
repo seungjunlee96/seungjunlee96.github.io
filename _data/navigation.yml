@@ -1,11 +1,10 @@
 # main links
 main:
-  - title: "Quick-Start Guide"
-    url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
-  # - title: "About"
-  #   url: https://mmistakes.github.io/minimal-mistakes/about/
-  # - title: "Sample Posts"
-  #   url: /year-archive/
+  - title: "Deep Learning"
+    url: https://seungjunlee96.github.io/deep-learning/
+  - title: "About"
+    url: http://127.0.0.1:4000/about
+    # url: https://seungjunlee96.github.io/about/
   # - title: "Sample Collections"
   #   url: /collection-archive/
   # - title: "Sitemap"

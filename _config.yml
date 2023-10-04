@@ -9,18 +9,18 @@
 #
 # Review documentation to determine if you should use `theme` or `remote_theme`
 # https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#installing-the-theme
-
-# theme                  : "minimal-mistakes-jekyll"
-remote_theme             : "mmistakes/minimal-mistakes"
+# https://github.com/mmistakes/minimal-mistakes
+theme                    : "minimal-mistakes-jekyll"
+# remote_theme             : "mmistakes/minimal-mistakes"
 minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Seungjun's Blog"
+title                    : "Seungjun Lee"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Seungjun Lee"
-description              : "Hi! I am Seungjun"
+description              : ""
 url                      : "https://seungjunlee96.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "seungjunlee96/seungjunlee96.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -94,8 +94,8 @@ analytics:
 # Site Author
 author:
   name             : "Seungjun Lee"
-  avatar           : "/assets/images/profile/profile.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Deep Learning Engineer @ Asan Medical Center"
+  avatar           : "/assets/images/about/profile.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  bio              : "Deep learning engineer @ Asan Medical Center (AMC)"
   location         : "Seoul, Republic of Korea"
   email            :
   links:
@@ -124,24 +124,24 @@ footer:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
       url: "lsjj096@gmail.com; lsjj096@snu.ac.kr"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      # url:
-    - label: "Facebook"
-      icon: "fab fa-fw fa-facebook-square"
-      # url:
+    # - label: "Twitter"
+    #   icon: "fab fa-fw fa-twitter-square"
+    #   # url:
+    # - label: "Facebook"
+    #   icon: "fab fa-fw fa-facebook-square"
+    #   # url:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/seungjunlee96"
-    - label: "GitLab"
-      icon: "fab fa-fw fa-gitlab"
-      # url:
-    - label: "Bitbucket"
-      icon: "fab fa-fw fa-bitbucket"
-      # url:
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      # url:
+    # - label: "GitLab"
+    #   icon: "fab fa-fw fa-gitlab"
+    #   # url:
+    # - label: "Bitbucket"
+    #   icon: "fab fa-fw fa-bitbucket"
+    #   # url:
+    # - label: "Instagram"
+    #   icon: "fab fa-fw fa-instagram"
+    #   # url:
 
 
 # Reading Files
