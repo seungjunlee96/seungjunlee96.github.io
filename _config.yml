@@ -10,8 +10,7 @@
 # Review documentation to determine if you should use `theme` or `remote_theme`
 # https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#installing-the-theme
 # https://github.com/mmistakes/minimal-mistakes
-theme                    : "minimal-mistakes-jekyll"
-# remote_theme             : "mmistakes/minimal-mistakes"
+remote_theme             : "mmistakes/minimal-mistakes@4.24.0"
 minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
@@ -95,7 +94,7 @@ analytics:
 author:
   name             : "Seungjun Lee"
   avatar           : "/assets/images/about/profile.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Deep learning engineer @ Asan Medical Center (AMC)"
+  bio              : ""
   location         : "Seoul, Republic of Korea"
   email            :
   links:
