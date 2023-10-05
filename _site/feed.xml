@@ -1,4 +1,80 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-10-04T15:51:52+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Seungjun Lee</title><subtitle></subtitle><author><name>Seungjun Lee</name></author><entry><title type="html">About</title><link href="http://localhost:4000/about/" rel="alternate" type="text/html" title="About" /><published>2023-10-04T00:00:00+09:00</published><updated>2023-10-04T00:00:00+09:00</updated><id>http://localhost:4000/about</id><content type="html" xml:base="http://localhost:4000/about/">&lt;p&gt;Hello world&lt;/p&gt;</content><author><name>Seungjun Lee</name></author><summary type="html">Hello world</summary></entry><entry><title type="html">Inception scores</title><link href="http://localhost:4000/deep-learning/inception-scores/" rel="alternate" type="text/html" title="Inception scores" /><published>2022-06-08T00:00:00+09:00</published><updated>2022-06-08T00:00:00+09:00</updated><id>http://localhost:4000/deep-learning/inception-scores</id><content type="html" xml:base="http://localhost:4000/deep-learning/inception-scores/">&lt;h1 id=&quot;inception-score&quot;&gt;Inception Score&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-10-05T10:46:46+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Seungjun Lee</title><subtitle></subtitle><author><name>Seungjun Lee</name></author><entry><title type="html">Deep Learning</title><link href="http://localhost:4000/deep-learning/" rel="alternate" type="text/html" title="Deep Learning" /><published>2023-10-04T00:00:00+09:00</published><updated>2023-10-04T00:00:00+09:00</updated><id>http://localhost:4000/deep-learning</id><content type="html" xml:base="http://localhost:4000/deep-learning/"></content><author><name>Seungjun Lee</name></author><summary type="html"></summary></entry><entry><title type="html">About</title><link href="http://localhost:4000/about/" rel="alternate" type="text/html" title="About" /><published>2023-10-04T00:00:00+09:00</published><updated>2023-10-04T00:00:00+09:00</updated><id>http://localhost:4000/about</id><content type="html" xml:base="http://localhost:4000/about/">&lt;p&gt;&lt;img src=&quot;/assets/images/about/profile.jpg&quot; alt=&quot;Seungjun Lee&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I like&lt;/p&gt;
+
+&lt;p&gt;Currently, Seungjun Lee works as a Machine Learning Engineer at &lt;a href=&quot;https://www.makinarocks.ai/en/&quot;&gt;MakinaRocks&lt;/a&gt;, which he joined in 2022. 
+His current research interests revolve around deep learning, generative models, and medical image analysis.&lt;/p&gt;
+
+&lt;p&gt;🌐 Contact Info&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;📪 &lt;strong&gt;Email&lt;/strong&gt;: lsjj096@gmail.com&lt;/li&gt;
+  &lt;li&gt;🎓 &lt;a href=&quot;https://scholar.google.com/citations?user=VfYHEWgAAAAJ&amp;amp;hl=en&amp;amp;oi=sra&quot;&gt;&lt;strong&gt;Google Scholar&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;🧑🏻‍💻 &lt;a href=&quot;https://github.com/seungjunlee96&quot;&gt;&lt;strong&gt;Github&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;💼 &lt;a href=&quot;https://www.notion.so/Seungjun-s-R-sum-935499edc0f64989b2baeeb98230fd89?pvs=21&quot;&gt;&lt;strong&gt;LinkedIn&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;educations&quot;&gt;🎓 Educations&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Ulsan National University of Medicine - Master Degree in Biomedical Engineering&lt;/li&gt;
+  &lt;li&gt;Seoul National University - Bachelor Degree in Naval Architecture and Ocean Engineering (major) and Mechanical Engineering (minor)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;publications&quot;&gt;📔 Publications&lt;/h2&gt;
+
+&lt;h3 id=&quot;2022&quot;&gt;2022&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Lee, S., Jeong, B., Kim, M., Jang, R., Paik, W., Kang, J., Chung, W. J., Hong, G. S., &amp;amp; Kim, N. (2022, July 22). &lt;em&gt;Emergency triage of brain computed tomography via anomaly detection with a deep generative model - Nature Communications&lt;/em&gt;. Nature. https://doi.org/10.1038/s41467-022-31808-0
+    &lt;ul&gt;
+      &lt;li&gt;Paper: &lt;a href=&quot;https://www.nature.com/articles/s41467-022-31808-0&quot;&gt;https://www.nature.com/articles/s41467-022-31808-0&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;Code: &lt;a href=&quot;https://github.com/seungjunlee96/emergency-triage-of-brain-computed-tomography-via-anomaly-detection-with-a-deep-generative-model&quot;&gt;https://github.com/seungjunlee96/emergency-triage-of-brain-computed-tomography-via-anomaly-detection-with-a-deep-generative-model&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;Related Post at &lt;strong&gt;Auntminnie&lt;/strong&gt; - &lt;strong&gt;**Deep-learning algorithm triages emergency head CTs&lt;/strong&gt;** (&lt;a href=&quot;https://www.auntminnie.com/index.aspx?sec=road&amp;amp;sub=aic_2021&amp;amp;pag=dis&amp;amp;itemId=133994&quot;&gt;Link&lt;/a&gt;)&lt;/li&gt;
+      &lt;li&gt;Honors &amp;amp; Awards
+        &lt;ul&gt;
+          &lt;li&gt;BRIC - 한국을 빛내는 사람들 (한빛사) 선정 (&lt;a href=&quot;https://www.ibric.org/bric/hanbitsa/han-interview.do?mode=view&amp;amp;id=78947&amp;amp;authorId=38395#!/list&quot;&gt;Link&lt;/a&gt;)&lt;/li&gt;
+          &lt;li&gt;제 21회 &lt;strong&gt;화이자의학상(Pfizer Medical Research Award)&lt;/strong&gt; 중개의학 분야 선정 (&lt;a href=&quot;https://www.medifonews.com/news/article.html?no=182863&quot;&gt;Link&lt;/a&gt;)&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;2021&quot;&gt;2021&lt;/h3&gt;
+
+&lt;h3 id=&quot;2020&quot;&gt;2020&lt;/h3&gt;
+
+&lt;h2 id=&quot;experience&quot;&gt;🗾 Experience&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Machine Learning Engineer at &lt;a href=&quot;https://www.makinarocks.ai/en/&quot;&gt;MakinaRocks&lt;/a&gt; (2022.06 ~)&lt;/li&gt;
+  &lt;li&gt;Machine Learning Researcher at Asan Medical Center (2020.03 ~ 2022.06)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;honors--awards&quot;&gt;🏆 Honors &amp;amp; awards&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Best Presentation Award (최우수 연제상) Issued by Korean Society of Artificial Intelligence of Medicine (KoSAIM, 대한의료인공지능학회), Oct 2020, Associated with Asan Medical Center (AMC)Associated with Asan Medical Center (AMC)&lt;/li&gt;
+  &lt;li&gt;Seungjun Lee, Minjee Kim, Gil-Sun Hong, and Namkug Kim. Unsupervised anomaly detection with a style-based generative adversarial network.Seungjun Lee, Minjee Kim, Gil-Sun Hong, and Namkug Kim. Unsupervised anomaly detection with a style-based generative adversarial network.&lt;/li&gt;
+  &lt;li&gt;Minister of Trade, Industry and Energy Award at the 2018 Creative Comprehensive Design CompetitionMinister of Trade, Industry and Energy Award at the 2018 Creative Comprehensive Design CompetitionIssued by 한국산업기술진흥원, 공학교육혁신협의회 · Dec 2018Issued by 한국산업기술진흥원, 공학교육혁신협의회 · Dec 2018
+    &lt;ul&gt;
+      &lt;li&gt;2018 창의적 종합설계 경진대회 산업통상자원부장관상2018 창의적 종합설계 경진대회 산업통상자원부장관상&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Grand prize at Seoul National University College of Engineering’s 7th Creative Design Festival (제7회 서울대학교 공과대학 창의설계축전 최우수상), Sep 2018, Issued by Seoul National University · Sep 2018&lt;/li&gt;
+  &lt;li&gt;Bronze Prize, University Students Contest of Mathematics (제 36회 전국 대학생 수학 경시대회[비수학전공분야] 동상), Issued by Korean Mathematical Society (대한수학회), Dec 2017 Issued by Korean Mathematical Society (대한수학회)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;️skills&quot;&gt;⛏️Skills&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;DevOps: git, docker&lt;/li&gt;
+  &lt;li&gt;MLOps &amp;amp; Experiment Tracking Tools: WandB, MLflow&lt;/li&gt;
+  &lt;li&gt;ML Libraries: PyTorch &amp;amp; PyTorch Lightning, Optuna, HyperOpt&lt;/li&gt;
+  &lt;li&gt;Data Science libraries: NumPy, Pandas, Scikit-learn, matplotlib, seaborn&lt;/li&gt;
+  &lt;li&gt;Communications: slack, Jira, Notion&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Seungjun Lee</name></author><summary type="html"></summary></entry><entry><title type="html">Inception scores</title><link href="http://localhost:4000/deep-learning/inception-scores/" rel="alternate" type="text/html" title="Inception scores" /><published>2022-06-08T00:00:00+09:00</published><updated>2022-06-08T00:00:00+09:00</updated><id>http://localhost:4000/deep-learning/inception-scores</id><content type="html" xml:base="http://localhost:4000/deep-learning/inception-scores/">&lt;h1 id=&quot;inception-score&quot;&gt;Inception Score&lt;/h1&gt;
 &lt;p&gt;Papers&lt;/p&gt;
 &lt;ol&gt;
   &lt;li&gt;Improved techniques for training GANs (https://arxiv.org/pdf/1606.03498.pdf)&lt;/li&gt;
@@ -89,4 +165,4 @@ KL divergence = p(y|x) * (log(p(y|x)) – log(p(y)))&lt;/p&gt;
 &lt;h1 id=&quot;references&quot;&gt;References&lt;/h1&gt;
 &lt;ul&gt;
   &lt;li&gt;https://machinelearningmastery.com/how-to-implement-the-inception-score-from-scratch-for-evaluating-generated-images/&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Seungjun Lee</name></author><category term="deep-learning" /><summary type="html">Inception Score Papers Improved techniques for training GANs (https://arxiv.org/pdf/1606.03498.pdf) A Note on the Inception Score (https://arxiv.org/pdf/1801.01973.pdf)</summary></entry><entry><title type="html">AnoGAN</title><link href="http://localhost:4000/deep-learning/anogan/" rel="alternate" type="text/html" title="AnoGAN" /><published>2020-07-21T00:00:00+09:00</published><updated>2020-07-21T00:00:00+09:00</updated><id>http://localhost:4000/deep-learning/anogan</id><content type="html" xml:base="http://localhost:4000/deep-learning/anogan/"></content><author><name>Seungjun Lee</name></author><category term="deep-learning" /><category term="Anomaly" /><category term="detection" /><summary type="html"></summary></entry></feed>
+&lt;/ul&gt;</content><author><name>Seungjun Lee</name></author><category term="deep-learning" /><summary type="html">Inception Score Papers Improved techniques for training GANs (https://arxiv.org/pdf/1606.03498.pdf) A Note on the Inception Score (https://arxiv.org/pdf/1801.01973.pdf)</summary></entry><entry><title type="html">AnoGAN</title><link href="http://localhost:4000/deep-learning/anogan/" rel="alternate" type="text/html" title="AnoGAN" /><published>2020-07-21T00:00:00+09:00</published><updated>2020-07-21T00:00:00+09:00</updated><id>http://localhost:4000/deep-learning/anogan</id><content type="html" xml:base="http://localhost:4000/deep-learning/anogan/"></content><author><name>Seungjun Lee</name></author><category term="deep-learning" /><category term="Anomaly-detection" /><summary type="html"></summary></entry></feed>

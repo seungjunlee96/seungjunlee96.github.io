@@ -1,7 +1,7 @@
 var store = [{
         "title": "AnoGAN",
         "excerpt":" ","categories": ["deep-learning"],
-        "tags": ["Anomaly","detection"],
+        "tags": ["Anomaly-detection"],
         "url": "/deep-learning/anogan/",
         "teaser": null
       },{
@@ -11,8 +11,14 @@ var store = [{
         "url": "/deep-learning/inception-scores/",
         "teaser": null
       },{
+        "title": "Deep Learning",
+        "excerpt":" ","categories": [],
+        "tags": [],
+        "url": "/deep-learning/",
+        "teaser": null
+      },{
         "title": "About",
-        "excerpt":"Hello world  ","categories": [],
+        "excerpt":"I like Currently, Seungjun Lee works as a Machine Learning Engineer at MakinaRocks, which he joined in 2022. His current research interests revolve around deep learning, generative models, and medical image analysis. 🌐 Contact Info 📪 Email: lsjj096@gmail.com 🎓 Google Scholar 🧑🏻‍💻 Github 💼 LinkedIn 🎓 Educations Ulsan National University of Medicine - Master...","categories": [],
         "tags": [],
         "url": "/about/",
         "teaser": null
