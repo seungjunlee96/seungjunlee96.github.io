@@ -1,92 +1,68 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-10-04T15:51:52+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Seungjun Lee</title><subtitle></subtitle><author><name>Seungjun Lee</name></author><entry><title type="html">About</title><link href="http://localhost:4000/about/" rel="alternate" type="text/html" title="About" /><published>2023-10-04T00:00:00+09:00</published><updated>2023-10-04T00:00:00+09:00</updated><id>http://localhost:4000/about</id><content type="html" xml:base="http://localhost:4000/about/">&lt;p&gt;Hello world&lt;/p&gt;</content><author><name>Seungjun Lee</name></author><summary type="html">Hello world</summary></entry><entry><title type="html">Inception scores</title><link href="http://localhost:4000/deep-learning/inception-scores/" rel="alternate" type="text/html" title="Inception scores" /><published>2022-06-08T00:00:00+09:00</published><updated>2022-06-08T00:00:00+09:00</updated><id>http://localhost:4000/deep-learning/inception-scores</id><content type="html" xml:base="http://localhost:4000/deep-learning/inception-scores/">&lt;h1 id=&quot;inception-score&quot;&gt;Inception Score&lt;/h1&gt;
-&lt;p&gt;Papers&lt;/p&gt;
-&lt;ol&gt;
-  &lt;li&gt;Improved techniques for training GANs (https://arxiv.org/pdf/1606.03498.pdf)&lt;/li&gt;
-  &lt;li&gt;A Note on the Inception Score (https://arxiv.org/pdf/1801.01973.pdf)&lt;/li&gt;
-&lt;/ol&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-10-06T09:18:01+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Seungjun Lee</title><subtitle></subtitle><author><name>Seungjun Lee</name></author><entry><title type="html">Deep Learning</title><link href="http://localhost:4000/deep-learning/" rel="alternate" type="text/html" title="Deep Learning" /><published>2023-10-04T00:00:00+09:00</published><updated>2023-10-04T00:00:00+09:00</updated><id>http://localhost:4000/deep-learning</id><content type="html" xml:base="http://localhost:4000/deep-learning/"></content><author><name>Seungjun Lee</name></author><summary type="html"></summary></entry><entry><title type="html">About</title><link href="http://localhost:4000/about/" rel="alternate" type="text/html" title="About" /><published>2023-10-04T00:00:00+09:00</published><updated>2023-10-04T00:00:00+09:00</updated><id>http://localhost:4000/about</id><content type="html" xml:base="http://localhost:4000/about/">&lt;p&gt;&lt;img src=&quot;/assets/images/about/profile.jpg&quot; alt=&quot;Seungjun Lee&quot; /&gt;&lt;/p&gt;
 
-&lt;h2 id=&quot;evaluating-black-box-generative-models&quot;&gt;Evaluating (Black-Box) Generative Models&lt;/h2&gt;
-&lt;p&gt;In contrast to supervised learning, Generative Adversarial Networks lack an objective function that measures “What is realistic?”, which makes it difficult to compare performance of different models.&lt;/p&gt;
+&lt;p&gt;I’m Seungjun Lee, an AI research engineer dedicated to serve humanity through innovative engineering.
+My primary research areas include deep learning, generative models, and medical image analysis.&lt;/p&gt;
 
-&lt;p&gt;Why is it so hard?&lt;/p&gt;
+&lt;h2 id=&quot;educations&quot;&gt;🎓 Educations&lt;/h2&gt;
+
 &lt;ul&gt;
-  &lt;li&gt;The real data distribution p(x) is unknown&lt;/li&gt;
-  &lt;li&gt;The explicit generative distribution q(x) is unknown. (ex. GANs uses random noise vectors for the latent variable)&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Master’s Degree&lt;/strong&gt;, Majoring in Biomedical Engineering, &lt;em&gt;Ulsan National University of Medicine&lt;/em&gt;.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Bachelor’s Degree&lt;/strong&gt;, Majoring in Naval Architecture and Ocean Engineering with a Mechanical Engineering Minor, &lt;em&gt;Seoul National University&lt;/em&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&quot;some-previous-metrics-for-the-evaluation-of-generative-models&quot;&gt;Some previous metrics for the evaluation of generative models&lt;/h2&gt;
+&lt;h2 id=&quot;publications&quot;&gt;📔 Publications&lt;/h2&gt;
+
 &lt;ul&gt;
-  &lt;li&gt;To approximate density function over generated samples and then calculate the likelihood of held-out samples&lt;/li&gt;
-  &lt;li&gt;To apply a pre-trained neural network to generated images and calculate statistics of its output or at a particular hidden layer.(Inception Score approach)&lt;/li&gt;
-  &lt;li&gt;Use a crowd-sourcing platform (Amazon Mechanical Turk) to evaluate a large number of GAN generated images.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;what-is-inception-score&quot;&gt;What is Inception Score?&lt;/h2&gt;
-&lt;p&gt;The &lt;strong&gt;Inception Score&lt;/strong&gt; is a metric for automatically evalutating the quality of image by generative adversarial networks. (&lt;a href=&quot;https://arxiv.org/pdf/1606.03498.pdf&quot;&gt;Salimans et al.2016&lt;/a&gt;)&lt;/p&gt;
-
-&lt;p&gt;The Inception Score uses an Inception v3 Network pre-trained on ImageNet and calculates a statistic of the network’s outputs when applied to generated images. The probability of the image belonging to each class is predicted and then, theses predictions are summarized into the Inception Score.&lt;/p&gt;
-
-&lt;h3 id=&quot;criterions&quot;&gt;Criterions&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;Image Quality : The generated image should be sharp rather than blurry&lt;/li&gt;
-  &lt;li&gt;
-    &lt;table&gt;
-      &lt;tbody&gt;
-        &lt;tr&gt;
-          &lt;td&gt;p(y&lt;/td&gt;
-          &lt;td&gt;x) should be low entropy : the inception network should be highly confident there is a single object in the image&lt;/td&gt;
-        &lt;/tr&gt;
-      &lt;/tbody&gt;
-    &lt;/table&gt;
+  &lt;li&gt;&lt;strong&gt;Emergency Triage of Brain Computed Tomography via Anomaly Detection with a Deep Generative Model&lt;/strong&gt;, &lt;em&gt;Nature Communications&lt;/em&gt;.
+    &lt;ul&gt;
+      &lt;li&gt;Authors: &lt;strong&gt;Seungjun Lee&lt;/strong&gt;, Boryeong Jeong, Minjee Kim, Ryoungwoo Jang, Wooyul Paik, Jiseon Kang, Won Jung Chung, Gil-Sun Hong &amp;amp; Namkug Kim&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;https://www.nature.com/articles/s41467-022-31808-0&quot;&gt;Paper&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;https://github.com/seungjunlee96/emergency-triage-of-brain-computed-tomography-via-anomaly-detection-with-a-deep-generative-model&quot;&gt;Code&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;Recognitions
+        &lt;ul&gt;
+          &lt;li&gt;BRIC - 한국을 빛내는 사람들 (&lt;a href=&quot;https://www.ibric.org/bric/hanbitsa/han-interview.do?mode=view&amp;amp;id=78947&amp;amp;authorId=38395#!/list&quot;&gt;Details&lt;/a&gt;)&lt;/li&gt;
+          &lt;li&gt;21st Pfizer Medical Research Award (&lt;a href=&quot;https://www.medifonews.com/news/article.html?no=182863&quot;&gt;Details&lt;/a&gt;)&lt;/li&gt;
+          &lt;li&gt;Featured on &lt;strong&gt;Auntminnie&lt;/strong&gt; - &lt;strong&gt;**Deep-learning algorithm triages emergency head CTs&lt;/strong&gt;** (&lt;a href=&quot;https://www.auntminnie.com/index.aspx?sec=road&amp;amp;sub=aic_2021&amp;amp;pag=dis&amp;amp;itemId=133994&quot;&gt;Link&lt;/a&gt;)&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
   &lt;/li&gt;
-  &lt;li&gt;Image Diversity : p(y) should be high entropy. (the generative algorithm should output a high diversity of images)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;informally,&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;table&gt;
-      &lt;tbody&gt;
-        &lt;tr&gt;
-          &lt;td&gt;Every realistic image should be recognizable, which means that the score distribution for it must be, ideally, dominated by one class.(The entropy of image-wise class distributions, p(y&lt;/td&gt;
-          &lt;td&gt;x) should have low entropy)&lt;/td&gt;
-        &lt;/tr&gt;
-      &lt;/tbody&gt;
-    &lt;/table&gt;
+  &lt;li&gt;&lt;strong&gt;Patent&lt;/strong&gt;: Method of detecting anomaly region in medical image, anomaly region detection device performing method, and method of training neural network used to detect anomaly region in medical image.
+    &lt;ul&gt;
+      &lt;li&gt;Publication No. 1020220103852 A&lt;/li&gt;
+      &lt;li&gt;Publication Date 25.07.2022&lt;/li&gt;
+    &lt;/ul&gt;
   &lt;/li&gt;
-  &lt;li&gt;Class distribution over the whole sample should be as close to uniform as possible, in other words, a good generator is a diverse generator.(The entropy of the overall distribution,which is p(y), should be high)&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Deep learning on radar centric 3D object detection&lt;/strong&gt;, ArXiv.
+    &lt;ul&gt;
+      &lt;li&gt;Authors: &lt;strong&gt;Seungjun Lee&lt;/strong&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;https://arxiv.org/abs/2003.00851&quot;&gt;Paper&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;How to Calculate?
-KL divergence = p(y|x) * (log(p(y|x)) – log(p(y)))&lt;/p&gt;
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;numpy&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;
+&lt;h2 id=&quot;experience&quot;&gt;🗾 Experience&lt;/h2&gt;
 
-&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;inception_score&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;model&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;images&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;n_split&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;eps&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;1E-16&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;scores&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[]&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;n_part&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;images&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;shape&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;/&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;n_split&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-    
-    &lt;span class=&quot;n&quot;&gt;y_hat&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;model&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;predict&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;images&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-    
-    &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n_split&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
-        &lt;span class=&quot;n&quot;&gt;ix_start&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ix_end&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;n_part&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;n_part&lt;/span&gt;
-        &lt;span class=&quot;n&quot;&gt;p_yx&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;y_hat&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ix_start&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ix_end&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
-        &lt;span class=&quot;n&quot;&gt;p_y&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;expand_Dims&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;p_yx&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mean&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;axis&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; 
-        &lt;span class=&quot;n&quot;&gt;D_kl&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;p_yx&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;log&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;p_yx&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;eps&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;p_y&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;eps&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
-        &lt;span class=&quot;n&quot;&gt;D_kl_sum&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;D_kl&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sum&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;axis&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-        &lt;span class=&quot;n&quot;&gt;scores&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;append&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;exp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mean&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;D_kl_sum&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;scores&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;array&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;scores&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mean&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;scores&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;std&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;scores&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;issues-with-the-inception-score&quot;&gt;Issues With the Inception Score&lt;/h2&gt;
-&lt;ol&gt;
-  &lt;li&gt;Suboptimalities of the Inception Score itself&lt;/li&gt;
-  &lt;li&gt;Problems with the popular usage of the Inception Score&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;It is extremely important when reporting the Inception Score of an algorithm to include some alternative scroe demonstrating that the model is not overfitting to training data, validating that the high score achieved is not simply replaying the training data.&lt;/p&gt;
-
-&lt;h1 id=&quot;references&quot;&gt;References&lt;/h1&gt;
 &lt;ul&gt;
-  &lt;li&gt;https://machinelearningmastery.com/how-to-implement-the-inception-score-from-scratch-for-evaluating-generated-images/&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Seungjun Lee</name></author><category term="deep-learning" /><summary type="html">Inception Score Papers Improved techniques for training GANs (https://arxiv.org/pdf/1606.03498.pdf) A Note on the Inception Score (https://arxiv.org/pdf/1801.01973.pdf)</summary></entry><entry><title type="html">AnoGAN</title><link href="http://localhost:4000/deep-learning/anogan/" rel="alternate" type="text/html" title="AnoGAN" /><published>2020-07-21T00:00:00+09:00</published><updated>2020-07-21T00:00:00+09:00</updated><id>http://localhost:4000/deep-learning/anogan</id><content type="html" xml:base="http://localhost:4000/deep-learning/anogan/"></content><author><name>Seungjun Lee</name></author><category term="deep-learning" /><category term="Anomaly" /><category term="detection" /><summary type="html"></summary></entry></feed>
+  &lt;li&gt;&lt;strong&gt;Machine Learning Engineer&lt;/strong&gt;, &lt;a href=&quot;https://www.makinarocks.ai/en/&quot;&gt;MakinaRocks&lt;/a&gt; (2022.06 ~)&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Machine Learning Researcher&lt;/strong&gt;, &lt;a href=&quot;https://eng.amc.seoul.kr&quot;&gt;Asan Medical Center&lt;/a&gt; (2020.03 ~ 2022.06)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;honors--awards&quot;&gt;🏆 Honors &amp;amp; awards&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Best Presentation Award&lt;/strong&gt;, &lt;em&gt;Unsupervised anomaly detection with a style-based generative adversarial network&lt;/em&gt;, Korean Society of Artificial Intelligence of Medicine (KoSAIM), Oct 2020&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Minister of Trade, Industry and Energy Award&lt;/strong&gt;, Creative Comprehensive Design Competition, Dec 2018&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Grand prize&lt;/strong&gt;, 7th Creative Design Festival, Seoul National University College of Engineering, Sep 2018&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Bronze Prize&lt;/strong&gt;, 36th National Collegiate Mathematics Competition (Non-Mathematics Majors), Korean Mathematical Society, Dec 2017&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;️skills&quot;&gt;⛏️Skills&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;DevOps&lt;/strong&gt;: git, docker&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;MLOps &amp;amp; Experiment Tracking Tools&lt;/strong&gt;: WandB, MLflow&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;ML Libraries&lt;/strong&gt;: PyTorch &amp;amp; PyTorch Lightning, Optuna, HyperOpt&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Data Science libraries&lt;/strong&gt;: NumPy, Pandas, Scikit-learn, matplotlib, seaborn&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Communications&lt;/strong&gt;: Slack, Jira, Notion&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Seungjun Lee</name></author><summary type="html"></summary></entry></feed>

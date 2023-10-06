@@ -122,6 +122,11 @@
               <a href="http://127.0.0.1:4000/about">About</a>
             </li></ul>
         
+        <button class="search__toggle" type="button">
+          <span class="visually-hidden">Toggle search</span>
+          <i class="fas fa-search"></i>
+        </button>
+        
         <button class="greedy-nav__toggle hidden" type="button">
           <span class="visually-hidden">Toggle menu</span>
           <div class="navicon"></div>
@@ -160,7 +165,7 @@
     
     
       <div class="author__bio" itemprop="description">
-        
+        <p>AI research engineer</p>
 
       </div>
     
@@ -178,15 +183,19 @@
       
         
           
-        
+            <li><a href="lsjj096@gmail.com" rel="nofollow noopener noreferrer"><i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i><span class="label">Email</span></a></li>
           
         
           
-        
+            <li><a href="https://github.com/seungjunlee96" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i><span class="label">GitHub</span></a></li>
           
         
           
+            <li><a href="https://www.linkedin.com/in/seungjun-lee-3293a1185/" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span class="label">LinkedIn</span></a></li>
+          
         
+          
+            <li><a href="https://scholar.google.com/citations?user=VfYHEWgAAAAJ&hl=en&oi=sra" rel="nofollow noopener noreferrer"><i class="fa fa-graduation-cap" aria-hidden="true"></i><span class="label">Google Scholar</span></a></li>
           
         
       
@@ -266,6 +275,17 @@
     </div>
 
     
+      <div class="search-content">
+        <div class="search-content__inner-wrap"><form class="search-content__form" onkeydown="return event.key != 'Enter';">
+    <label class="sr-only" for="search">
+      Enter your search term...
+    </label>
+    <input type="search" id="search" class="search-input" tabindex="-1" placeholder="Enter your search term..." />
+  </form>
+  <div id="results" class="results"></div></div>
+
+      </div>
+    
 
     <div id="footer" class="page__footer">
       <footer>
@@ -306,6 +326,10 @@
 
 
 
+
+<script src="/assets/js/lunr/lunr.min.js"></script>
+<script src="/assets/js/lunr/lunr-store.js"></script>
+<script src="/assets/js/lunr/lunr-en.js"></script>
 
 
 

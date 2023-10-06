@@ -122,6 +122,11 @@
               <a href="http://127.0.0.1:4000/about">About</a>
             </li></ul>
         
+        <button class="search__toggle" type="button">
+          <span class="visually-hidden">Toggle search</span>
+          <i class="fas fa-search"></i>
+        </button>
+        
         <button class="greedy-nav__toggle hidden" type="button">
           <span class="visually-hidden">Toggle menu</span>
           <div class="navicon"></div>
@@ -160,7 +165,7 @@
     
     
       <div class="author__bio" itemprop="description">
-        
+        <p>AI research engineer</p>
 
       </div>
     
@@ -178,15 +183,19 @@
       
         
           
-        
+            <li><a href="lsjj096@gmail.com" rel="nofollow noopener noreferrer"><i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i><span class="label">Email</span></a></li>
           
         
           
-        
+            <li><a href="https://github.com/seungjunlee96" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i><span class="label">GitHub</span></a></li>
           
         
           
+            <li><a href="https://www.linkedin.com/in/seungjun-lee-3293a1185/" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span class="label">LinkedIn</span></a></li>
+          
         
+          
+            <li><a href="https://scholar.google.com/citations?user=VfYHEWgAAAAJ&hl=en&oi=sra" rel="nofollow noopener noreferrer"><i class="fa fa-graduation-cap" aria-hidden="true"></i><span class="label">Google Scholar</span></a></li>
           
         
       
@@ -295,14 +304,15 @@
       <span class="page__meta-readtime">
         <i class="far fa-clock" aria-hidden="true"></i>
         
-          less than 1 minute read
+          1 minute read
         
       </span>
     
   </p>
 
 
-    <p class="archive__item-excerpt" itemprop="description">Hello world
+    <p class="archive__item-excerpt" itemprop="description">
+
 </p>
   </article>
 </div>
@@ -317,50 +327,7 @@
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/deep-learning/inception-scores/" rel="permalink">Inception scores
-</a>
-      
-    </h2>
-    
-
-  <p class="page__meta">
-    
-
-    
-
-    
-      
-      
-
-      <span class="page__meta-readtime">
-        <i class="far fa-clock" aria-hidden="true"></i>
-        
-          2 minute read
-        
-      </span>
-    
-  </p>
-
-
-    <p class="archive__item-excerpt" itemprop="description">Inception Score
-Papers
-
-  Improved techniques for training GANs (https://arxiv.org/pdf/1606.03498.pdf)
-  A Note on the Inception Score (https://arxiv.org/pdf...</p>
-  </article>
-</div>
-
-  
-    
-
-
-
-<div class="list__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-    <h2 class="archive__item-title no_toc" itemprop="headline">
-      
-        <a href="/deep-learning/anogan/" rel="permalink">AnoGAN
+        <a href="/deep-learning/" rel="permalink">Deep Learning
 </a>
       
     </h2>
@@ -400,6 +367,17 @@ Papers
 </div>
     </div>
 
+    
+      <div class="search-content">
+        <div class="search-content__inner-wrap"><form class="search-content__form" onkeydown="return event.key != 'Enter';">
+    <label class="sr-only" for="search">
+      Enter your search term...
+    </label>
+    <input type="search" id="search" class="search-input" tabindex="-1" placeholder="Enter your search term..." />
+  </form>
+  <div id="results" class="results"></div></div>
+
+      </div>
     
 
     <div id="footer" class="page__footer">
@@ -441,6 +419,10 @@ Papers
 
 
 
+
+<script src="/assets/js/lunr/lunr.min.js"></script>
+<script src="/assets/js/lunr/lunr-store.js"></script>
+<script src="/assets/js/lunr/lunr-en.js"></script>
 
 
 
