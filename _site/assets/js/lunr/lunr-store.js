@@ -1,16 +1,4 @@
 var store = [{
-        "title": "AnoGAN",
-        "excerpt":" ","categories": ["deep-learning"],
-        "tags": ["Anomaly-detection"],
-        "url": "/deep-learning/anogan/",
-        "teaser": null
-      },{
-        "title": "Inception scores",
-        "excerpt":"Inception Score Papers Improved techniques for training GANs (https://arxiv.org/pdf/1606.03498.pdf) A Note on the Inception Score (https://arxiv.org/pdf/1801.01973.pdf) Evaluating (Black-Box) Generative Models In contrast to supervised learning, Generative Adversarial Networks lack an objective function that measures “What is realistic?”, which makes it difficult to compare performance of different models. Why is it...","categories": ["deep-learning"],
-        "tags": [],
-        "url": "/deep-learning/inception-scores/",
-        "teaser": null
-      },{
         "title": "Deep Learning",
         "excerpt":" ","categories": [],
         "tags": [],
@@ -18,7 +6,7 @@ var store = [{
         "teaser": null
       },{
         "title": "About",
-        "excerpt":"I like Currently, Seungjun Lee works as a Machine Learning Engineer at MakinaRocks, which he joined in 2022. His current research interests revolve around deep learning, generative models, and medical image analysis. 🌐 Contact Info 📪 Email: lsjj096@gmail.com 🎓 Google Scholar 🧑🏻‍💻 Github 💼 LinkedIn 🎓 Educations Ulsan National University of Medicine - Master...","categories": [],
+        "excerpt":"   I’m Seungjun Lee, an AI research engineer dedicated to serve humanity through innovative engineering. My primary research areas include deep learning, generative models, and medical image analysis.   🎓 Educations      Master’s Degree, Majoring in Biomedical Engineering, Ulsan National University of Medicine.   Bachelor’s Degree, Majoring in Naval Architecture and Ocean Engineering with a Mechanical Engineering Minor, Seoul National University.   📔 Publications      Emergency Triage of Brain Computed Tomography via Anomaly Detection with a Deep Generative Model, Nature Communications.            Authors: Seungjun Lee, Boryeong Jeong, Minjee Kim, Ryoungwoo Jang, Wooyul Paik, Jiseon Kang, Won Jung Chung, Gil-Sun Hong &amp; Namkug Kim       Paper       Code       Recognitions                    BRIC - 한국을 빛내는 사람들 (Details)           21st Pfizer Medical Research Award (Details)           Featured on Auntminnie - **Deep-learning algorithm triages emergency head CTs** (Link)                           Patent: Method of detecting anomaly region in medical image, anomaly region detection device performing method, and method of training neural network used to detect anomaly region in medical image.            Publication No. 1020220103852 A       Publication Date 25.07.2022           Deep learning on radar centric 3D object detection, ArXiv.            Authors: Seungjun Lee       Paper           🗾 Experience      Machine Learning Engineer, MakinaRocks (2022.06 ~)   Machine Learning Researcher, Asan Medical Center (2020.03 ~ 2022.06)   🏆 Honors &amp; awards      Best Presentation Award, Unsupervised anomaly detection with a style-based generative adversarial network, Korean Society of Artificial Intelligence of Medicine (KoSAIM), Oct 2020   Minister of Trade, Industry and Energy Award, Creative Comprehensive Design Competition, Dec 2018   Grand prize, 7th Creative Design Festival, Seoul National University College of Engineering, Sep 2018   Bronze Prize, 36th National Collegiate Mathematics Competition (Non-Mathematics Majors), Korean Mathematical Society, Dec 2017   ⛏️Skills      DevOps: git, docker   MLOps &amp; Experiment Tracking Tools: WandB, MLflow   ML Libraries: PyTorch &amp; PyTorch Lightning, Optuna, HyperOpt   Data Science libraries: NumPy, Pandas, Scikit-learn, matplotlib, seaborn   Communications: Slack, Jira, Notion  ","categories": [],
         "tags": [],
         "url": "/about/",
         "teaser": null
