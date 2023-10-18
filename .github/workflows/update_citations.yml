@@ -1,0 +1,31 @@
+name: Update Citations Count
+
+on:
+  schedule:
+    - cron: '0 0 * * 0'  # This runs the action every Sunday at midnight
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.x'
+
+    - name: Install dependencies
+      run: |
+        pip install requests beautifulsoup4
+
+    - name: Run script to update citation count
+      run: python path_to_your_script.py
+
+    - name: Commit changes
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git commit -am "Update citation count" || echo "No changes to commit"
+        git push
