@@ -36,10 +36,10 @@ citation_counts = {
 
 # Now, open your CV markdown and replace the placeholder with the citation count
 for paper_title, citation_count in citation_counts.items():
-    with open('/_posts/about/2023-10-04-about.md', 'r') as file:
+    with open('./_posts/about/2023-10-04-about.md', 'r') as file:
         cv_content = file.read()
 
     updated_content = re.sub(rf'CITED BY: \[{paper_title}\]', f'CITED BY: {citation_count}', cv_content)
 
-    with open('/_posts/about/2023-10-04-about.md', 'w') as file:
+    with open('./_posts/about/2023-10-04-about.md', 'w') as file:
         file.write(updated_content)
