@@ -30,7 +30,7 @@ paper_titles = [
     'Emergency Triage of Brain Computed Tomography via Anomaly Detection with a Deep Generative Model',
 ]
 citation_counts = {
-    get_citation_count(scholar_profile_url, paper_title)
+    paper_title: get_citation_count(scholar_profile_url, paper_title)
     for paper_title in paper_titles
 }
 
