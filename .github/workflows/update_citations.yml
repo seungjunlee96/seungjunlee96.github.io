@@ -3,6 +3,7 @@ name: Update Citations Count
 on:
   schedule:
     - cron: '0 0 * * 0'  # This runs the action every Sunday at midnight
+  workflow_dispatch:  # This allows for manual triggering
 
 jobs:
   update:
