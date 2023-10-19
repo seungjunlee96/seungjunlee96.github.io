@@ -1,45 +1,64 @@
 import requests
 from bs4 import BeautifulSoup
 import re
+from typing import List, Dict
 
-def get_citation_count(scholar_profile_url, paper_title):
-    response = requests.get(scholar_profile_url)
-    soup = BeautifulSoup(response.content, 'html.parser')
+class CitationException(Exception):
+    """Base exception for all citation related errors."""
+    pass
 
-    # Find the paper element by title
-    paper_element = soup.find('a', text=paper_title)
+class PaperNotFoundException(CitationException):
+    """Raised when a paper is not found on Google Scholar."""
+    pass
 
-    # If paper is not found, return None
-    if not paper_element:
-        return None
+class CitationCountNotFoundException(CitationException):
+    """Raised when the citation count for a paper is not found."""
+    pass
 
-    # Get the citation count for the paper
-    citation_element = paper_element.find_next('a', text=re.compile(r'Cited by \d+'))
+class CitationUpdater:
+    HEADERS = {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.107 Safari/537.36"
+    }
 
-    # If citation element is not found, return 0
-    if not citation_element:
-        return 0
+    def __init__(self, scholar_profile_url: str, cv_path: str):
+        self.scholar_profile_url = scholar_profile_url
+        self.cv_path = cv_path
 
-    citation_count = int(re.search(r'\d+', citation_element.text).group())
-    return citation_count
+    def get_citation_count(self, soup: BeautifulSoup, paper_title: str) -> int:
+        paper_element = soup.find('a', string=paper_title)
+        if not paper_element:
+            raise PaperNotFoundException(f"'{paper_title}' not found.")
+        
+        citation_element = paper_element.find_next(string=re.compile(r'^\d+$'))
+        if not citation_element:
+            raise CitationCountNotFoundException("Citation count not found.")
+        
+        return int(citation_element.strip())
 
-scholar_profile_url = 'https://scholar.google.com/citations?user=VfYHEWgAAAAJ&hl=en&authuser=1'
+    def update_cv_with_citation_counts(self, paper_titles: List[str]) -> None:
+        soup = self._get_soup(self.scholar_profile_url)
 
-paper_titles = [
-    'Deep learning on radar centric 3D object detection',
-    'Emergency Triage of Brain Computed Tomography via Anomaly Detection with a Deep Generative Model',
-]
-citation_counts = {
-    paper_title: get_citation_count(scholar_profile_url, paper_title)
-    for paper_title in paper_titles
-}
+        with open(self.cv_path, 'r') as file:
+            cv_content = file.read()
 
-# Now, open your CV markdown and replace the placeholder with the citation count
-for paper_title, citation_count in citation_counts.items():
-    with open('./_posts/about/2023-10-04-about.md', 'r') as file:
-        cv_content = file.read()
+        for paper_title in paper_titles:
+            citation_count = self.get_citation_count(soup, paper_title)
+            cv_content = cv_content.replace(f'Cited by **[{paper_title}]**', f'Cited by **{citation_count}**')
 
-    updated_content = re.sub(rf'CITED BY: \[{paper_title}\]', f'CITED BY: {citation_count}', cv_content)
+        with open(self.cv_path, 'w') as file:
+            file.write(cv_content)
 
-    with open('./_posts/about/2023-10-04-about.md', 'w') as file:
-        file.write(updated_content)
+    def _get_soup(self, url: str) -> BeautifulSoup:
+        response = requests.get(url, headers=self.HEADERS)
+        return BeautifulSoup(response.content, 'html.parser')
+
+if __name__ == "__main__":
+    CV_PATH = '_posts/about/2023-10-04-about.md'
+    SCHOLAR_PROFILE_URL = 'https://scholar.google.com/citations?user=VfYHEWgAAAAJ&hl=en&authuser=1'
+    paper_titles = [
+        'Deep learning on radar centric 3D object detection',
+        'Emergency triage of brain computed tomography via anomaly detection with a deep generative model',
+    ]
+
+    updater = CitationUpdater(SCHOLAR_PROFILE_URL, CV_PATH)
+    updater.update_cv_with_citation_counts(paper_titles)
