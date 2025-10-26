@@ -11,15 +11,15 @@
 # https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#installing-the-theme
 # https://github.com/mmistakes/minimal-mistakes
 remote_theme             : "mmistakes/minimal-mistakes@4.24.0"
-minimal_mistakes_skin    : "neon" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "air" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "en-US"
 title                    : "Seungjun Lee"
 title_separator          : "-"
-subtitle                 : # site tagline that appears below site title in masthead
+subtitle                 : "AI Research Engineer | Deep Learning | Medical Imaging"
 name                     : "Seungjun Lee"
-description              : ""
+description              : "AI research engineer specializing in deep generative models, anomaly detection, and medical image analysis. Published researcher in Nature Communications with expertise in machine learning and computer vision."
 url                      : "https://seungjunlee96.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "seungjunlee96/seungjunlee96.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -95,11 +95,10 @@ author:
   name             : "Seungjun Lee"
   avatar           : "/assets/images/about/profile.jpg"
   bio              : "AI research engineer"
-  location         : "Seoul, Republic of Korea"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      url: "lsjj096@gmail.com"
+      url: "mailto:lsjj096@gmail.com"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/seungjunlee96"
@@ -113,9 +112,12 @@ author:
 # Site Footer
 footer:
   links:
-    - label: "Email"
+    - label: "Email (Primary)"
       icon: "fas fa-fw fa-envelope-square"
-      url: "lsjj096@gmail.com; lsjj096@snu.ac.kr"
+      url: "mailto:lsjj096@gmail.com"
+    - label: "Email (Academic)"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:lsjj096@snu.ac.kr"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/seungjunlee96"

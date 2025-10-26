@@ -1,8 +1,4 @@
 # main links
 main:
-  - title: "Life Style"
-    url: https://seungjunlee96.github.io/life-style/
-  - title: "Deep Learning"
-    url: https://seungjunlee96.github.io/deep-learning/
   - title: "About"
-    url: https://seungjunlee96.github.io/about/
+    url: /about/

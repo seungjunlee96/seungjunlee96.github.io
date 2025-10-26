@@ -1,67 +1,97 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-10-06T12:03:17+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Seungjun Lee</title><subtitle></subtitle><author><name>Seungjun Lee</name></author><entry><title type="html">About</title><link href="http://localhost:4000/about/" rel="alternate" type="text/html" title="About" /><published>2023-10-04T00:00:00+09:00</published><updated>2023-10-04T00:00:00+09:00</updated><id>http://localhost:4000/about</id><content type="html" xml:base="http://localhost:4000/about/">&lt;p&gt;&lt;img src=&quot;/assets/images/about/profile.jpg&quot; alt=&quot;Seungjun Lee&quot; /&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.5">Jekyll</generator><link href="http://0.0.0.0:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://0.0.0.0:4000/" rel="alternate" type="text/html" /><updated>2025-10-26T16:49:31+09:00</updated><id>http://0.0.0.0:4000/feed.xml</id><title type="html">Seungjun Lee</title><subtitle>AI research engineer specializing in deep generative models, anomaly detection, and medical image analysis. Published researcher in Nature Communications with expertise in machine learning and computer vision.</subtitle><author><name>Seungjun Lee</name></author><entry><title type="html">About</title><link href="http://0.0.0.0:4000/about/about/" rel="alternate" type="text/html" title="About" /><published>2023-10-05T00:00:00+09:00</published><updated>2023-10-05T00:00:00+09:00</updated><id>http://0.0.0.0:4000/about/about</id><content type="html" xml:base="http://0.0.0.0:4000/about/about/"><![CDATA[<p><img src="/assets/images/about/profile.jpg" alt="Profile photo of Seungjun Lee" /></p>
 
-&lt;p&gt;I’m Seungjun Lee, an AI research engineer dedicated to serve humanity through harnessing innovative engineering. My primary research areas include deep learning, deep generative models, and medical image analysis.&lt;/p&gt;
+<p>I am Seungjun Lee, an AI research engineer focused on advancing healthcare and engineering through innovative AI solutions. My expertise lies in deep generative models, anomaly detection, and medical image analysis.</p>
 
-&lt;h2 id=&quot;educations&quot;&gt;🎓 Educations&lt;/h2&gt;
+<h2 id="education">Education</h2>
 
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;Master’s Degree&lt;/strong&gt;, Majoring in Biomedical Engineering, &lt;em&gt;Ulsan National University of Medicine&lt;/em&gt;.&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Bachelor’s Degree&lt;/strong&gt;, Majoring in Naval Architecture and Ocean Engineering with a Mechanical Engineering Minor, &lt;em&gt;Seoul National University&lt;/em&gt;.&lt;/li&gt;
-&lt;/ul&gt;
+<ul>
+  <li>M.Sc. in Biomedical Engineering, University of Ulsan College of Medicine.</li>
+  <li>B.S. in Naval Architecture and Ocean Engineering, Minor in Mechanical Engineering, Seoul National University.</li>
+</ul>
 
-&lt;h2 id=&quot;publications&quot;&gt;📔 Publications&lt;/h2&gt;
+<h2 id="publications">Publications</h2>
 
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;Emergency Triage of Brain Computed Tomography via Anomaly Detection with a Deep Generative Model&lt;/strong&gt;, &lt;em&gt;Nature Communications&lt;/em&gt;.
-    &lt;ul&gt;
-      &lt;li&gt;Authors: &lt;strong&gt;Seungjun Lee&lt;/strong&gt;, Boryeong Jeong, Minjee Kim, Ryoungwoo Jang, Wooyul Paik, Jiseon Kang, Won Jung Chung, Gil-Sun Hong &amp;amp; Namkug Kim&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;https://www.nature.com/articles/s41467-022-31808-0&quot;&gt;Paper&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;https://github.com/seungjunlee96/emergency-triage-of-brain-computed-tomography-via-anomaly-detection-with-a-deep-generative-model&quot;&gt;Code&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;Recognitions
-        &lt;ul&gt;
-          &lt;li&gt;BRIC - 한국을 빛내는 사람들 (&lt;a href=&quot;https://www.ibric.org/bric/hanbitsa/han-interview.do?mode=view&amp;amp;id=78947&amp;amp;authorId=38395#!/list&quot;&gt;Details&lt;/a&gt;)&lt;/li&gt;
-          &lt;li&gt;21st Pfizer Medical Research Award (&lt;a href=&quot;https://www.medifonews.com/news/article.html?no=182863&quot;&gt;Details&lt;/a&gt;)&lt;/li&gt;
-          &lt;li&gt;Featured on &lt;strong&gt;Auntminnie&lt;/strong&gt; - &lt;strong&gt;**Deep-learning algorithm triages emergency head CTs&lt;/strong&gt;** (&lt;a href=&quot;https://www.auntminnie.com/index.aspx?sec=road&amp;amp;sub=aic_2021&amp;amp;pag=dis&amp;amp;itemId=133994&quot;&gt;Link&lt;/a&gt;)&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Patent&lt;/strong&gt;: Method of detecting anomaly region in medical image, anomaly region detection device performing method, and method of training neural network used to detect anomaly region in medical image.
-    &lt;ul&gt;
-      &lt;li&gt;Publication No. 1020220103852 A&lt;/li&gt;
-      &lt;li&gt;Publication Date 25.07.2022&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Deep learning on radar centric 3D object detection&lt;/strong&gt;, ArXiv.
-    &lt;ul&gt;
-      &lt;li&gt;Authors: &lt;strong&gt;Seungjun Lee&lt;/strong&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;https://arxiv.org/abs/2003.00851&quot;&gt;Paper&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
+<p><a href="https://scholar.google.co.kr/citations?user=VfYHEWgAAAAJ&amp;hl=en">Google Scholar Profile</a></p>
 
-&lt;h2 id=&quot;experience&quot;&gt;🗾 Experience&lt;/h2&gt;
+<ul>
+  <li>
+    <p><strong>Emergency Triage of Brain Computed Tomography via Anomaly Detection with a Deep Generative Model</strong> (2022). <em>Nature Communications</em>. Citations: 32.<br />
+Authors: <strong>Seungjun Lee</strong>, Boryeong Jeong, Minjee Kim, Ryoungwoo Jang, Wooyul Paik, Jiseon Kang, Won Jung Chung, Gil-Sun Hong, &amp; Namkug Kim.<br />
+<a href="https://www.nature.com/articles/s41467-022-31808-0">Paper</a> | <a href="https://github.com/seungjunlee96/emergency-triage-of-brain-computed-tomography-via-anomaly-detection-with-a-deep-generative-model">Code</a>.</p>
+  </li>
+  <li>
+    <p><strong>Deep Learning on Radar-Centric 3D Object Detection</strong> (2020). <em>arXiv preprint arXiv:2003.00851</em>. Citations: 29.<br />
+Author: <strong>Seungjun Lee</strong>.<br />
+<a href="https://arxiv.org/abs/2003.00851">Paper</a>.</p>
+  </li>
+  <li>
+    <p><strong>Enhancement of Evaluating Flatfoot on a Weight-Bearing Lateral Radiograph of the Foot with U-Net Based Semantic Segmentation on the Long Axis of Tarsal and Metatarsal Bones</strong> (2022). <em>Computers in Biology and Medicine</em>. Citations: 18.<br />
+Authors: S.M. Ryu, K. Shin, S.W. Shin, <strong>Seungjun Lee</strong>, N. Kim.<br />
+<a href="https://www.sciencedirect.com/science/article/pii/S0010482522000906">Paper</a>.</p>
+  </li>
+  <li>
+    <p><strong>Enhancing Deep Learning Based Classifiers with Inpainting Anatomical Side Markers (L/R Markers) for Multi-Center Trials</strong> (2022). <em>Computer Methods and Programs in Biomedicine</em>. Citations: 10.<br />
+Authors: K.D. Kim, K. Cho, M. Kim, K.H. Lee, <strong>Seungjun Lee</strong>, S.M. Lee, K.H. Lee, N. Kim.<br />
+<a href="https://www.sciencedirect.com/science/article/pii/S0169260722000906">Paper</a>.</p>
+  </li>
+  <li>
+    <p><strong>Automated Idiopathic Normal Pressure Hydrocephalus Diagnosis via Artificial Intelligence–Based 3D T1 MRI Volumetric Analysis</strong> (2025). <em>American Journal of Neuroradiology</em>. Citations: 0.<br />
+Authors: Joonhyung Lee, Dana Kim, Chong Hyun Suh, Suyoung Yun, Kyu Sung Choi, <strong>Seungjun Lee</strong>, Wooseok Jung, Jinyoung Kim, Hwon Heo, Woo Hyun Shim, Sungyang Jo, Sun Ju Chung, Jae-Sung Lim, Ho Sung Kim, Sang Joon Kim, &amp; Jae-Hong Lee.<br />
+<a href="https://www.ajnr.org/content/early/2025/01/02/ajnr.A8489">Paper</a>.</p>
+  </li>
+</ul>
 
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;Machine Learning Engineer&lt;/strong&gt;, &lt;a href=&quot;https://www.makinarocks.ai/en/&quot;&gt;MakinaRocks&lt;/a&gt; (2022.06 ~)&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Machine Learning Researcher&lt;/strong&gt;, &lt;a href=&quot;https://eng.amc.seoul.kr&quot;&gt;Asan Medical Center&lt;/a&gt; (2020.03 ~ 2022.06)&lt;/li&gt;
-&lt;/ul&gt;
+<h2 id="patents">Patents</h2>
 
-&lt;h2 id=&quot;honors--awards&quot;&gt;🏆 Honors &amp;amp; awards&lt;/h2&gt;
+<ul>
+  <li><strong>Method of Detecting Anomaly Region in Medical Image, Anomaly Region Detection Device Performing Method, and Method of Training Neural Network Used to Detect Anomaly Region in Medical Image</strong>.<br />
+Publication No. 1020220103852 A. Publication Date: July 25, 2022.</li>
+</ul>
 
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;Best Presentation Award&lt;/strong&gt;, &lt;em&gt;Unsupervised anomaly detection with a style-based generative adversarial network&lt;/em&gt;, Korean Society of Artificial Intelligence of Medicine (KoSAIM), Oct 2020&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Minister of Trade, Industry and Energy Award&lt;/strong&gt;, Creative Comprehensive Design Competition, Dec 2018&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Grand prize&lt;/strong&gt;, 7th Creative Design Festival, Seoul National University College of Engineering, Sep 2018&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Bronze Prize&lt;/strong&gt;, 36th National Collegiate Mathematics Competition (Non-Mathematics Majors), Korean Mathematical Society, Dec 2017&lt;/li&gt;
-&lt;/ul&gt;
+<h2 id="recognitions">Recognitions</h2>
 
-&lt;h2 id=&quot;️skills&quot;&gt;⛏️Skills&lt;/h2&gt;
+<ul>
+  <li><strong>21st Pfizer Medical Research Award</strong> for contributions to emergency triage via anomaly detection <a href="https://www.medifonews.com/news/article.html?no=182863"></a>.</li>
+  <li>Featured in <strong>BRIC - 한국을 빛내는 사람들</strong> <a href="https://www.ibric.org/bric/hanbitsa/han-interview.do?mode=view&amp;id=78947&amp;authorId=38395#!/list"></a>.</li>
+  <li>Featured on <strong>AuntMinnie</strong>: “Deep-Learning Algorithm Triages Emergency Head CTs” <a href="https://www.auntminnie.com/index.aspx?sec=road&amp;sub=aic_2021&amp;pag=dis&amp;itemId=133994"></a>.</li>
+</ul>
 
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;DevOps&lt;/strong&gt;: git, docker&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;MLOps &amp;amp; Experiment Tracking Tools&lt;/strong&gt;: WandB, MLflow&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;ML Libraries&lt;/strong&gt;: PyTorch &amp;amp; PyTorch Lightning, Optuna, HyperOpt&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Data Science libraries&lt;/strong&gt;: NumPy, Pandas, Scikit-learn, matplotlib, seaborn&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Communications&lt;/strong&gt;: Slack, Jira, Notion&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Seungjun Lee</name></author><summary type="html"></summary></entry><entry><title type="html">Deep Learning</title><link href="http://localhost:4000/deep-learning/" rel="alternate" type="text/html" title="Deep Learning" /><published>2023-10-04T00:00:00+09:00</published><updated>2023-10-04T00:00:00+09:00</updated><id>http://localhost:4000/deep-learning</id><content type="html" xml:base="http://localhost:4000/deep-learning/"></content><author><name>Seungjun Lee</name></author><summary type="html"></summary></entry></feed>
+<h2 id="professional-experience">Professional Experience</h2>
+
+<ul>
+  <li>
+    <p><strong>Research Scientist/Engineer</strong>, VUNO Inc. (March 2024 – Present).<br />
+Contributing to AI-driven medical device development, including diagnostic tools for neuroimaging.</p>
+  </li>
+  <li>
+    <p><strong>Machine Learning Engineer</strong>, MakinaRocks (June 2022 – March 2024).<br />
+Developed and deployed ML models for industrial applications, focusing on anomaly detection and optimization.</p>
+  </li>
+  <li>
+    <p><strong>Machine Learning Researcher</strong>, Asan Medical Center (March 2020 – June 2022).<br />
+Conducted research on medical imaging AI, including generative models for diagnostic triage.</p>
+  </li>
+</ul>
+
+<h2 id="honors-and-awards">Honors and Awards</h2>
+
+<ul>
+  <li><strong>Best Presentation Award</strong>, Korean Society of Artificial Intelligence in Medicine (KoSAIM), for “Unsupervised Anomaly Detection with a Style-Based Generative Adversarial Network” (October 2020).</li>
+  <li><strong>Minister of Trade, Industry and Energy Award</strong>, Creative Comprehensive Design Competition (December 2018).</li>
+  <li><strong>Grand Prize</strong>, 7th Creative Design Festival, Seoul National University College of Engineering (September 2018).</li>
+  <li><strong>Bronze Prize</strong>, 36th National Collegiate Mathematics Competition (Non-Mathematics Majors), Korean Mathematical Society (December 2017).</li>
+</ul>
+
+<h2 id="technical-skills">Technical Skills</h2>
+
+<ul>
+  <li><strong>DevOps</strong>: Git, Docker.</li>
+  <li><strong>MLOps &amp; Experiment Tracking</strong>: Weights &amp; Biases (W&amp;B), MLflow.</li>
+  <li><strong>Machine Learning Frameworks</strong>: PyTorch, PyTorch Lightning, Optuna, HyperOpt.</li>
+  <li><strong>Data Science Libraries</strong>: NumPy, Pandas, Scikit-learn, Matplotlib, Seaborn.</li>
+  <li><strong>Collaboration Tools</strong>: Slack, Jira, Notion.</li>
+</ul>
+
+<h2 id="contact">Contact</h2>
+
+<p>For collaborations or inquiries, reach me at lsjj096@gmail.com or connect on <a href="https://www.linkedin.com/in/seungjun-lee-3293a1185/">LinkedIn</a>.</p>]]></content><author><name>Seungjun Lee</name></author><category term="About" /><summary type="html"><![CDATA[]]></summary></entry></feed>

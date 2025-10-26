@@ -1,5 +1,11 @@
 Gemfile.lock
 
+# Jekyll
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata/
+
 # General
 *.ini
 .DS_Store

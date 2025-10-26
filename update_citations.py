@@ -36,21 +36,47 @@ class CitationUpdater:
         return int(citation_element.strip())
 
     def update_cv_with_citation_counts(self, paper_titles: List[str]) -> None:
-        soup = self._get_soup(self.scholar_profile_url)
+        try:
+            soup = self._get_soup(self.scholar_profile_url)
+        except Exception as e:
+            raise CitationException(f"Failed to fetch Google Scholar page: {e}")
 
-        with open(self.cv_path, 'r') as file:
-            cv_content = file.read()
+        try:
+            with open(self.cv_path, 'r') as file:
+                cv_content = file.read()
+        except FileNotFoundError:
+            raise CitationException(f"CV file not found: {self.cv_path}")
+        except Exception as e:
+            raise CitationException(f"Failed to read CV file: {e}")
 
         for paper_title in paper_titles:
-            citation_count = self.get_citation_count(soup, paper_title)
-            cv_content = cv_content.replace(f'Cited by **[{paper_title}]**', f'Cited by **{citation_count}**')
+            try:
+                citation_count = self.get_citation_count(soup, paper_title)
+                old_text = f'Cited by **[<citation>]**'.replace('<citation>', paper_title)
+                new_text = f'Cited by **{citation_count}**'
+                if old_text in cv_content:
+                    cv_content = cv_content.replace(old_text, new_text)
+                    print(f"Updated: {paper_title} - Citations: {citation_count}")
+                else:
+                    print(f"Warning: Could not find citation placeholder for '{paper_title}'")
+            except PaperNotFoundException as e:
+                print(f"Warning: {e}")
+            except CitationCountNotFoundException as e:
+                print(f"Warning: {e}")
 
-        with open(self.cv_path, 'w') as file:
-            file.write(cv_content)
+        try:
+            with open(self.cv_path, 'w') as file:
+                file.write(cv_content)
+        except Exception as e:
+            raise CitationException(f"Failed to write CV file: {e}")
 
     def _get_soup(self, url: str) -> BeautifulSoup:
-        response = requests.get(url, headers=self.HEADERS)
-        return BeautifulSoup(response.content, 'html.parser')
+        try:
+            response = requests.get(url, headers=self.HEADERS, timeout=10)
+            response.raise_for_status()
+            return BeautifulSoup(response.content, 'html.parser')
+        except requests.exceptions.RequestException as e:
+            raise CitationException(f"Failed to fetch page: {e}")
 
 if __name__ == "__main__":
     CV_PATH = '_posts/about/2023-10-04-about.md'

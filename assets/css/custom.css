@@ -1,0 +1,62 @@
+/* 
+ * Apple-Style Design Customizations
+ * 깔끔한 화이트 톤 & 작은 폰트
+ */
+
+/* About 페이지 및 모든 article 콘텐츠 폰트 크기 조정 */
+.page__content {
+  font-size: 0.85em !important; /* 85% 크기 - 더 작게 */
+  line-height: 1.6;
+}
+
+/* 제목 크기도 함께 조정 */
+.page__content h1 { 
+  font-size: 1.75em !important; 
+}
+
+.page__content h2 { 
+  font-size: 1.5em !important; 
+}
+
+.page__content h3 { 
+  font-size: 1.25em !important; 
+}
+
+.page__content h4 { 
+  font-size: 1.15em !important; 
+}
+
+.page__content h5 { 
+  font-size: 1.05em !important; 
+}
+
+.page__content h6 { 
+  font-size: 1em !important; 
+}
+
+/* 리스트, 블록 인용, 표도 함께 작게 */
+.page__content ul, 
+.page__content ol, 
+.page__content dl, 
+.page__content blockquote, 
+.page__content table {
+  font-size: 0.85em !important;
+}
+
+/* Apple San Francisco Font Stack */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", system-ui, sans-serif !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* 제목은 Semibold */
+.page__content h1,
+.page__content h2,
+.page__content h3,
+.page__content h4,
+.page__content h5,
+.page__content h6 {
+  font-weight: 600 !important;
+}
+
