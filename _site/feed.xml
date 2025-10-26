@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.5">Jekyll</generator><link href="http://0.0.0.0:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://0.0.0.0:4000/" rel="alternate" type="text/html" /><updated>2025-10-26T16:58:59+09:00</updated><id>http://0.0.0.0:4000/feed.xml</id><title type="html">Seungjun Lee</title><subtitle>AI research engineer specializing in deep generative models, anomaly detection, and medical image analysis. Published researcher in Nature Communications with expertise in machine learning and computer vision.</subtitle><author><name>Seungjun Lee</name></author><entry><title type="html">About</title><link href="http://0.0.0.0:4000/about/about/" rel="alternate" type="text/html" title="About" /><published>2023-10-05T00:00:00+09:00</published><updated>2023-10-05T00:00:00+09:00</updated><id>http://0.0.0.0:4000/about/about</id><content type="html" xml:base="http://0.0.0.0:4000/about/about/"><![CDATA[<p><img src="/assets/images/about/profile.jpg" alt="Profile photo of Seungjun Lee" /></p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.5">Jekyll</generator><link href="http://0.0.0.0:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://0.0.0.0:4000/" rel="alternate" type="text/html" /><updated>2025-10-26T16:59:57+09:00</updated><id>http://0.0.0.0:4000/feed.xml</id><title type="html">Seungjun Lee</title><subtitle>AI research engineer specializing in deep generative models, anomaly detection, and medical image analysis. Published researcher in Nature Communications with expertise in machine learning and computer vision.</subtitle><author><name>Seungjun Lee</name></author><entry><title type="html">About</title><link href="http://0.0.0.0:4000/about/about/" rel="alternate" type="text/html" title="About" /><published>2023-10-05T00:00:00+09:00</published><updated>2023-10-05T00:00:00+09:00</updated><id>http://0.0.0.0:4000/about/about</id><content type="html" xml:base="http://0.0.0.0:4000/about/about/"><![CDATA[<p><img src="/assets/images/about/profile.jpg" alt="Profile photo of Seungjun Lee" /></p>
 
 <p>I am Seungjun Lee, an AI research engineer focused on advancing healthcare and engineering through innovative AI solutions. My expertise lies in deep generative models, anomaly detection, and medical image analysis.</p>
 
@@ -78,14 +78,4 @@ Conducted research on medical imaging AI, including generative models for diagno
   <li><strong>Minister of Trade, Industry and Energy Award</strong>, Creative Comprehensive Design Competition (December 2018).</li>
   <li><strong>Grand Prize</strong>, 7th Creative Design Festival, Seoul National University College of Engineering (September 2018).</li>
   <li><strong>Bronze Prize</strong>, 36th National Collegiate Mathematics Competition (Non-Mathematics Majors), Korean Mathematical Society (December 2017).</li>
-</ul>
-
-<h2 id="technical-skills">Technical Skills</h2>
-
-<ul>
-  <li><strong>DevOps</strong>: Git, Docker.</li>
-  <li><strong>MLOps &amp; Experiment Tracking</strong>: Weights &amp; Biases (W&amp;B), MLflow.</li>
-  <li><strong>Machine Learning Frameworks</strong>: PyTorch, PyTorch Lightning, Optuna, HyperOpt.</li>
-  <li><strong>Data Science Libraries</strong>: NumPy, Pandas, Scikit-learn, Matplotlib, Seaborn.</li>
-  <li><strong>Collaboration Tools</strong>: Slack, Jira, Notion.</li>
 </ul>]]></content><author><name>Seungjun Lee</name></author><category term="About" /><summary type="html"><![CDATA[]]></summary></entry></feed>
