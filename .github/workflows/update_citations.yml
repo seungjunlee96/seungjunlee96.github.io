@@ -10,29 +10,35 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-      - name: Setup Node.js environment
-        uses: actions/setup-node@v3
-        with:
-          node-version: '18'
-          
       - name: Check out repository
         uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
 
       - name: Set up Python
         uses: actions/setup-python@v3
         with:
-          python-version: 3.11
+          python-version: '3.11'
 
       - name: Install dependencies
         run: |
           pip install requests beautifulsoup4
 
-      - name: Run script to update citation count
+      - name: Update citation counts
         run: python update_citations.py
 
-      - name: Commit changes
+      - name: Commit and push if changes were made
         run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
-          git commit -am "Update citation count" || echo "No changes to commit"
-          git push
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          
+          if ! git diff --quiet; then
+            echo "Changes detected, committing..."
+            git add _posts/about/2023-10-04-about.md
+            git commit -m "Automated: Update citation counts"
+            git push
+          else
+            echo "No changes detected"
+          fi
+

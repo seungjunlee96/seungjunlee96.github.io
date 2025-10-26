@@ -1,47 +1,11 @@
 /* 
- * Apple-Style Design Customizations
- * 깔끔한 화이트 톤 & 작은 폰트
+ * Apple-Style Readability Design
+ * Optimized for focused reading
  */
 
-/* About 페이지 및 모든 article 콘텐츠 폰트 크기 조정 */
-.page__content {
-  font-size: 0.85em !important; /* 85% 크기 - 더 작게 */
-  line-height: 1.6;
-}
-
-/* 제목 크기도 함께 조정 */
-.page__content h1 { 
-  font-size: 1.75em !important; 
-}
-
-.page__content h2 { 
-  font-size: 1.5em !important; 
-}
-
-.page__content h3 { 
-  font-size: 1.25em !important; 
-}
-
-.page__content h4 { 
-  font-size: 1.15em !important; 
-}
-
-.page__content h5 { 
-  font-size: 1.05em !important; 
-}
-
-.page__content h6 { 
-  font-size: 1em !important; 
-}
-
-/* 리스트, 블록 인용, 표도 함께 작게 */
-.page__content ul, 
-.page__content ol, 
-.page__content dl, 
-.page__content blockquote, 
-.page__content table {
-  font-size: 0.85em !important;
-}
+/* ============================================
+   Apple Typography Hierarchy
+   ============================================ */
 
 /* Apple San Francisco Font Stack */
 body {
@@ -50,13 +14,132 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* 제목은 Semibold */
-.page__content h1,
-.page__content h2,
-.page__content h3,
-.page__content h4,
-.page__content h5,
-.page__content h6 {
+/* 
+ * Readability: Body Text
+ * - Comfortable reading size: 15px
+ * - Generous line-height for comfortable reading
+ */
+.page__content,
+.page .page__content,
+.page__inner .page__content,
+.article .page__content {
+  font-size: 0.875rem !important; /* 14px - comfortable reading size */
+  line-height: 1.75 !important; /* Generous spacing for readability */
+  color: #1d1d1f !important; /* Apple's near-black for clarity */
+  max-width: 900px !important; /* Comfortable wider reading width */
+  margin-left: auto !important;
+  margin-right: auto !important;
+  padding: 0 20px !important;
+  width: 100% !important;
+  box-sizing: border-box !important;
+}
+
+/* Paragraph spacing for breathability */
+.page__content p {
+  margin-bottom: 1.25em !important;
+}
+
+/* 
+ * Heading Hierarchy
+ * Clear, distinct sizes with proper spacing
+ */
+.page__content h1 { 
+  font-size: 2.5rem !important; 
+  font-weight: 700 !important;
+  line-height: 1.2 !important;
+  margin-top: 2em !important;
+  margin-bottom: 0.75em !important;
+  letter-spacing: -0.02em !important;
+}
+
+.page__content h2 { 
+  font-size: 1.875rem !important;
+  font-weight: 700 !important;
+  line-height: 1.3 !important;
+  margin-top: 2em !important;
+  margin-bottom: 0.5em !important;
+  letter-spacing: -0.01em !important;
+}
+
+.page__content h3 { 
+  font-size: 1.5rem !important;
   font-weight: 600 !important;
+  line-height: 1.4 !important;
+  margin-top: 1.75em !important;
+  margin-bottom: 0.5em !important;
+}
+
+.page__content h4 { 
+  font-size: 1.25rem !important;
+  font-weight: 600 !important;
+  margin-top: 1.5em !important;
+  margin-bottom: 0.5em !important;
+}
+
+/* Lists - Improved readability */
+.page__content ul, 
+.page__content ol {
+  font-size: 0.9375rem !important; /* 15px - match body text */
+  line-height: 1.75 !important;
+  margin-bottom: 1.25em !important;
+  padding-left: 1.5em !important;
+}
+
+.page__content li {
+  margin-bottom: 0.5em !important;
+}
+
+/* Links - Subtle, clear styling */
+.page__content a {
+  color: #0071e3 !important; /* Apple Blue */
+  text-decoration: none !important;
+  border-bottom: 1px solid rgba(0, 113, 227, 0.3) !important;
+  transition: border-color 0.2s ease !important;
+}
+
+.page__content a:hover {
+  border-bottom-color: #0071e3 !important;
+}
+
+/* Blockquotes - Subtle, elegant */
+.page__content blockquote {
+  font-size: 0.9375rem !important; /* 15px - match body text */
+  line-height: 1.75 !important;
+  color: #6e6e73 !important;
+  border-left: 3px solid #d2d2d7 !important;
+  padding-left: 1.25em !important;
+  margin: 1.5em 0 !important;
+  font-style: italic !important;
+}
+
+/* Author Profile - Subtle, professional */
+.author__content {
+  color: #6e6e73 !important;
+  font-size: 0.9375rem !important;
+}
+
+/* Remove sidebar clutter - Focus on content */
+@media (min-width: 80em) {
+  .sidebar {
+    width: 240px !important;
+  }
+  
+  .page__content {
+    max-width: 900px !important;
+  }
+}
+
+/* Generous whitespace */
+.page__content > * {
+  margin-bottom: 1.5em !important;
+}
+
+/* Publication links - Clear hierarchy */
+.page__content a[href^="https://github.com"],
+.page__content a[href^="https://arxiv.org"],
+.page__content a[href^="https://www.nature.com"],
+.page__content a[href^="https://www.sciencedirect.com"] {
+  font-size: 0.875rem !important;
+  color: #0071e3 !important;
 }
 

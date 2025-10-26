@@ -42,31 +42,60 @@ class CitationUpdater:
             raise CitationException(f"Failed to fetch Google Scholar page: {e}")
 
         try:
-            with open(self.cv_path, 'r') as file:
+            with open(self.cv_path, 'r', encoding='utf-8') as file:
                 cv_content = file.read()
         except FileNotFoundError:
             raise CitationException(f"CV file not found: {self.cv_path}")
         except Exception as e:
             raise CitationException(f"Failed to read CV file: {e}")
 
+        changes_made = False
         for paper_title in paper_titles:
             try:
                 citation_count = self.get_citation_count(soup, paper_title)
-                old_text = f'Cited by **[<citation>]**'.replace('<citation>', paper_title)
-                new_text = f'Cited by **{citation_count}**'
-                if old_text in cv_content:
-                    cv_content = cv_content.replace(old_text, new_text)
-                    print(f"Updated: {paper_title} - Citations: {citation_count}")
+                
+                # Search for the paper and replace AUTO_UPDATE or old citation count
+                # Pattern 1: "Citations: [AUTO_UPDATE]"
+                pattern1 = re.compile(
+                    rf'\*\*{re.escape(paper_title)}\*\*.*?Citations?: \[AUTO_UPDATE\]',
+                    re.IGNORECASE | re.DOTALL
+                )
+                
+                # Pattern 2: "Citations: 32" (existing number)
+                pattern2 = re.compile(
+                    rf'(\*\*{re.escape(paper_title)}\*\*.*?Citations?:\s*)\d+',
+                    re.IGNORECASE | re.DOTALL
+                )
+                
+                replacement = rf'\1**{citation_count}**'
+                
+                # Try to replace AUTO_UPDATE first
+                if pattern1.search(cv_content):
+                    cv_content = pattern1.sub(
+                        rf'**{paper_title}**. Citations: **{citation_count}**',
+                        cv_content
+                    )
+                    print(f"✓ Updated: {paper_title} - Citations: {citation_count}")
+                    changes_made = True
+                # Then try to replace existing number
+                elif pattern2.search(cv_content):
+                    cv_content = pattern2.sub(replacement, cv_content)
+                    print(f"✓ Updated: {paper_title} - Citations: {citation_count}")
+                    changes_made = True
                 else:
-                    print(f"Warning: Could not find citation placeholder for '{paper_title}'")
+                    print(f"⚠ Warning: Could not find citation pattern for '{paper_title}'")
             except PaperNotFoundException as e:
-                print(f"Warning: {e}")
+                print(f"⚠ Warning: {e}")
             except CitationCountNotFoundException as e:
-                print(f"Warning: {e}")
+                print(f"⚠ Warning: {e}")
 
         try:
-            with open(self.cv_path, 'w') as file:
+            with open(self.cv_path, 'w', encoding='utf-8') as file:
                 file.write(cv_content)
+            if changes_made:
+                print("✓ File updated successfully")
+            else:
+                print("ℹ No changes to citations")
         except Exception as e:
             raise CitationException(f"Failed to write CV file: {e}")
 
