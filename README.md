@@ -1,18 +1,17 @@
 # Seungjun Lee's Personal Website
 
-This is the personal website and blog of Seungjun Lee, hosted on GitHub Pages using Jekyll and the Minimal Mistakes theme.
+This is the personal website of Seungjun Lee, hosted on GitHub Pages using Jekyll and the Minimal Mistakes theme. The site is a single-page portfolio showcasing research, publications, and professional experience.
 
 ## Site Structure
 
 ```
 ├── _config.yml          # Jekyll configuration
 ├── _data/               # Site data files
-│   ├── navigation.yml   # Navigation menu
+│   ├── navigation.yml   # Navigation menu (empty for single-page site)
 │   └── ui-text.yml      # UI text translations
 ├── _pages/              # Static pages
 │   └── 404.md           # 404 error page
-├── _posts/              # Blog posts
-│   └── about/           # About page (single post)
+├── index.md           # Main single-page content (Markdown)
 └── assets/              # Images and media
     └── images/
         └── about/
@@ -22,12 +21,11 @@ This is the personal website and blog of Seungjun Lee, hosted on GitHub Pages us
 ## Features
 
 - Clean, modern design using Minimal Mistakes theme
-- Responsive layout
-- Search functionality
-- Author profile
-- Social links (GitHub, LinkedIn, Google Scholar)
+- Single-page layout
+- Responsive design
+- Author profile with social links (GitHub, LinkedIn, Google Scholar)
 - Publication showcase
-- Skills and experience display
+- Professional experience and awards
 
 ## Local Development
 
@@ -62,13 +60,34 @@ The generated site will be in the `_site` directory.
 
 ## Updating Citation Counts
 
-The site includes a script to automatically update citation counts from Google Scholar:
+The site includes an automated citation updater using the Semantic Scholar API. Citation counts are automatically updated daily via GitHub Actions.
+
+### Automatic Updates
+
+Citation counts are automatically updated every day at 00:00 UTC (09:00 KST) via GitHub Actions. No manual intervention is required.
+
+### Manual Updates
+
+To manually update citation counts:
 
 ```bash
 python update_citations.py
 ```
 
-**Note:** This script may require adjustments if Google Scholar's HTML structure changes.
+The script:
+- Uses Semantic Scholar API to fetch citation counts
+- Supports DOI-based lookup (most accurate)
+- Falls back to title-based search for papers without DOI
+- Updates citation counts in `index.md`
+- Handles all 5 publications automatically
+
+### How It Works
+
+1. The script queries Semantic Scholar API for each publication
+2. Uses DOI when available (more accurate)
+3. Falls back to title search for arXiv papers
+4. Updates citation counts in the format: `📊 X citations`
+5. GitHub Actions runs daily to keep counts up-to-date
 
 ## Deployment
 
@@ -76,17 +95,13 @@ The site is automatically deployed to GitHub Pages when changes are pushed to th
 
 ## Customization
 
-### Adding Posts
+### Updating Content
 
-Create new markdown files in the `_posts/` directory with the naming convention: `YYYY-MM-DD-title.md`
+Edit `index.md` to update your biography, publications, and experience. The site uses a single-page layout, so all content is in this file.
 
 ### Modifying Navigation
 
-Edit `_data/navigation.yml` to add or remove navigation links.
-
-### Updating About Page
-
-Edit `_posts/about/2023-10-04-about.md` to update your biography, publications, and experience.
+Edit `_data/navigation.yml` to add navigation links if needed (currently empty for single-page site).
 
 ## Theme
 

@@ -1,145 +1,512 @@
 /* 
- * Apple-Style Readability Design
- * Optimized for focused reading
+ * Apple Design System
+ * Typography and Color following Apple's Human Interface Guidelines
  */
 
 /* ============================================
-   Apple Typography Hierarchy
+   CSS Variables - Apple Design System
    ============================================ */
-
-/* Apple San Francisco Font Stack */
-body {
-  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", system-ui, sans-serif !important;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root {
+  /* Colors */
+  --color-primary-text: #1d1d1f;
+  --color-body-text: #424245;
+  --color-secondary-text: #86868b;
+  --color-link: #0071e3;
+  --color-link-hover: #0071e3;
+  --color-link-active: #0051a2;
+  --color-border: rgba(0, 113, 227, 0.3);
+  --color-highlight-bg: rgba(0, 113, 227, 0.05);
+  --color-highlight-bg-strong: rgba(0, 113, 227, 0.08);
+  --color-highlight-border: #0071e3;
+  
+  /* Typography */
+  --font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-size-body: 17px;
+  --font-size-small: 15px;
+  --font-size-h1: 48px;
+  --font-size-h2: 34px;
+  --font-size-h3: 28px;
+  --font-size-name: 56px;
+  --line-height-body: 1.47059;
+  --line-height-h1: 1.08349;
+  --line-height-h2: 1.11765;
+  --line-height-h3: 1.14286;
+  --line-height-name: 1.07143;
+  --font-weight-regular: 400;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --letter-spacing-body: -0.022em;
+  --letter-spacing-heading: -0.003em;
+  --letter-spacing-name: -0.005em;
+  
+  /* Spacing */
+  --spacing-xs: 0.25em;
+  --spacing-sm: 0.5em;
+  --spacing-md: 1em;
+  --spacing-lg: 1.25em;
+  --spacing-xl: 1.5em;
+  --spacing-2xl: 2em;
+  --spacing-3xl: 2.5em;
+  --spacing-4xl: 3em;
+  
+  /* Layout */
+  --max-width-content: 1200px;
+  --padding-content: 40px;
+  --padding-content-mobile: 20px;
+  --border-radius: 4px;
 }
 
-/* 
- * Readability: Body Text
- * - Comfortable reading size: 15px
- * - Generous line-height for comfortable reading
- */
+/* ============================================
+   Typography - SF Pro Font Stack
+   ============================================ */
+
+body {
+  font-family: var(--font-family) !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: "kern" 1;
+  text-rendering: optimizeLegibility;
+}
+
 .page__content,
 .page .page__content,
 .page__inner .page__content,
 .article .page__content {
-  font-size: 0.875rem !important; /* 14px - comfortable reading size */
-  line-height: 1.75 !important; /* Generous spacing for readability */
-  color: #1d1d1f !important; /* Apple's near-black for clarity */
-  max-width: 900px !important; /* Comfortable wider reading width */
+  font-size: var(--font-size-body) !important;
+  line-height: var(--line-height-body) !important;
+  color: var(--color-body-text) !important;
+  max-width: var(--max-width-content) !important;
   margin-left: auto !important;
   margin-right: auto !important;
-  padding: 0 20px !important;
+  padding: 0 var(--padding-content) !important;
   width: 100% !important;
   box-sizing: border-box !important;
+  font-weight: var(--font-weight-regular) !important;
+  letter-spacing: var(--letter-spacing-body) !important;
 }
 
-/* Paragraph spacing for breathability */
+/* Profile Header - Prominent Name and Contact */
+.profile-header {
+  text-align: center;
+  margin: var(--spacing-4xl) 0 var(--spacing-3xl) 0;
+}
+
+.profile-name {
+  font-size: var(--font-size-name) !important;
+  font-weight: var(--font-weight-bold) !important;
+  line-height: var(--line-height-name) !important;
+  letter-spacing: var(--letter-spacing-name) !important;
+  color: var(--color-primary-text) !important;
+  margin: 0 0 var(--spacing-md) 0 !important;
+  padding: 0 !important;
+  border: none !important;
+}
+
+.contact-info {
+  font-size: var(--font-size-body) !important;
+  line-height: var(--line-height-body) !important;
+  color: var(--color-body-text) !important;
+  margin-top: var(--spacing-sm);
+  word-spacing: var(--spacing-xs);
+}
+
+.contact-info a {
+  color: var(--color-link) !important;
+  text-decoration: none !important;
+  border-bottom: 1px solid var(--color-border) !important;
+  transition: border-color 0.2s ease, color 0.2s ease !important;
+  font-weight: var(--font-weight-regular) !important;
+  white-space: nowrap;
+}
+
+.contact-info a:hover {
+  border-bottom-color: var(--color-link-hover) !important;
+  color: var(--color-link-hover) !important;
+}
+
+.contact-info a:active {
+  color: var(--color-link-active) !important;
+}
+
+.contact-separator {
+  color: var(--color-secondary-text) !important;
+  margin: 0 var(--spacing-xs);
+}
+
+/* Profile Image - Minimal (if used) */
+.profile-image {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: none;
+  box-shadow: none;
+  transition: opacity 0.3s ease;
+}
+
+.profile-image:hover {
+  opacity: 0.85;
+}
+
+/* Paragraph spacing */
 .page__content p {
-  margin-bottom: 1.25em !important;
+  margin-bottom: var(--spacing-xl) !important;
+  font-size: var(--font-size-body) !important;
+  line-height: var(--line-height-body) !important;
+  color: var(--color-body-text) !important;
+  font-weight: var(--font-weight-regular) !important;
 }
 
-/* 
- * Heading Hierarchy
- * Clear, distinct sizes with proper spacing
- */
-.page__content h1 { 
-  font-size: 2.5rem !important; 
-  font-weight: 700 !important;
-  line-height: 1.2 !important;
-  margin-top: 2em !important;
-  margin-bottom: 0.75em !important;
-  letter-spacing: -0.02em !important;
+/* Headings - Apple Typography Scale */
+.page__content h1:not(.profile-name) { 
+  font-size: var(--font-size-h1) !important; 
+  font-weight: var(--font-weight-bold) !important;
+  line-height: var(--line-height-h1) !important;
+  margin-top: var(--spacing-4xl) !important;
+  margin-bottom: var(--spacing-sm) !important;
+  letter-spacing: var(--letter-spacing-heading) !important;
+  border-bottom: none !important;
+  padding-bottom: 0 !important;
+  color: var(--color-primary-text) !important;
 }
 
 .page__content h2 { 
-  font-size: 1.875rem !important;
-  font-weight: 700 !important;
-  line-height: 1.3 !important;
-  margin-top: 2em !important;
-  margin-bottom: 0.5em !important;
-  letter-spacing: -0.01em !important;
+  font-size: var(--font-size-h2) !important;
+  font-weight: var(--font-weight-bold) !important;
+  line-height: var(--line-height-h2) !important;
+  margin-top: var(--spacing-3xl) !important;
+  margin-bottom: var(--spacing-md) !important;
+  letter-spacing: var(--letter-spacing-heading) !important;
+  color: var(--color-primary-text) !important;
+  border-bottom: none !important;
+  padding-bottom: 0 !important;
+}
+
+/* First section after profile header */
+.page__content h2:first-of-type {
+  margin-top: var(--spacing-2xl) !important;
 }
 
 .page__content h3 { 
-  font-size: 1.5rem !important;
-  font-weight: 600 !important;
-  line-height: 1.4 !important;
-  margin-top: 1.75em !important;
-  margin-bottom: 0.5em !important;
+  font-size: var(--font-size-h3) !important;
+  font-weight: var(--font-weight-semibold) !important;
+  line-height: var(--line-height-h3) !important;
+  margin-top: var(--spacing-2xl) !important;
+  margin-bottom: var(--spacing-sm) !important;
+  letter-spacing: var(--letter-spacing-heading) !important;
+  color: var(--color-primary-text) !important;
 }
 
-.page__content h4 { 
-  font-size: 1.25rem !important;
-  font-weight: 600 !important;
-  margin-top: 1.5em !important;
-  margin-bottom: 0.5em !important;
+/* Common Item Styles - Base */
+.item-base {
+  margin-bottom: var(--spacing-md);
+  padding: 0;
+  background-color: transparent;
+  border-left: none;
+  border-radius: 0;
+  line-height: var(--line-height-body) !important;
+  font-size: var(--font-size-body) !important;
+  color: var(--color-body-text) !important;
 }
 
-/* Lists - Improved readability */
+.item-base strong {
+  color: var(--color-primary-text) !important;
+  font-weight: var(--font-weight-semibold) !important;
+}
+
+/* Education - Apple style */
+.education-item {
+  margin-bottom: var(--spacing-md);
+  padding: 0;
+  background-color: transparent;
+  border-left: none;
+  border-radius: 0;
+  font-size: var(--font-size-body) !important;
+  line-height: var(--line-height-body) !important;
+  color: var(--color-body-text) !important;
+}
+
+.education-item strong {
+  color: var(--color-primary-text) !important;
+  font-size: var(--font-size-body) !important;
+  font-weight: var(--font-weight-semibold) !important;
+}
+
+/* Publications - Apple style */
+.publication-item {
+  margin-bottom: var(--spacing-lg);
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
+  line-height: var(--line-height-body) !important;
+  font-size: var(--font-size-body) !important;
+  color: var(--color-body-text) !important;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.publication-item strong {
+  color: var(--color-primary-text) !important;
+  font-weight: var(--font-weight-semibold) !important;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.publication-item em {
+  color: var(--color-secondary-text) !important;
+  font-style: normal;
+  font-weight: var(--font-weight-regular) !important;
+}
+
+/* Publication Highlight - Nature Communications */
+.publication-highlight {
+  padding: var(--spacing-md) !important;
+  background-color: var(--color-highlight-bg) !important;
+  border-left: 3px solid var(--color-highlight-border) !important;
+  border-radius: var(--border-radius) !important;
+}
+
+.publication-highlight.nature-comm {
+  background-color: var(--color-highlight-bg-strong) !important;
+  border-left-color: var(--color-highlight-border) !important;
+}
+
+/* Publication Links with Icons */
+.pub-link {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+  margin: 0 var(--spacing-xs);
+}
+
+.link-icon {
+  font-size: 0.9em;
+  line-height: 1;
+}
+
+/* External Link Icon */
+.page__content a[target="_blank"]::after {
+  content: " ↗";
+  font-size: 0.85em;
+  opacity: 0.7;
+  margin-left: var(--spacing-xs);
+}
+
+.contact-info a[target="_blank"]::after {
+  display: none; /* Don't show icon for contact links */
+}
+
+.pub-link[target="_blank"]::after {
+  display: none; /* Don't show icon for publication links (already have icons) */
+}
+
+/* Citation Count */
+.citation-count {
+  color: var(--color-secondary-text) !important;
+  font-size: var(--font-size-small) !important;
+  font-weight: var(--font-weight-regular) !important;
+  font-style: italic;
+  margin-left: var(--spacing-xs);
+}
+
+/* Experience - Apple style */
+.experience-item {
+  margin-bottom: var(--spacing-md);
+  padding: 0;
+  background-color: transparent;
+  border-left: none;
+  border-radius: 0;
+  line-height: var(--line-height-body) !important;
+  font-size: var(--font-size-body) !important;
+  color: var(--color-body-text) !important;
+}
+
+.experience-item strong {
+  color: var(--color-primary-text) !important;
+  font-weight: var(--font-weight-semibold) !important;
+}
+
+.experience-period {
+  color: var(--color-secondary-text) !important;
+  font-size: var(--font-size-small) !important;
+  font-weight: var(--font-weight-regular) !important;
+}
+
+/* Patent - Apple style */
+.patent-item {
+  margin-bottom: var(--spacing-lg);
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
+  line-height: var(--line-height-body) !important;
+  font-size: var(--font-size-body) !important;
+  color: var(--color-body-text) !important;
+}
+
+.patent-item strong {
+  color: var(--color-primary-text) !important;
+  font-weight: var(--font-weight-semibold) !important;
+}
+
+/* Recognition - Apple style */
+.recognition-item {
+  margin-bottom: var(--spacing-md);
+  padding: 0;
+  background-color: transparent;
+  border-left: none;
+  border-radius: 0;
+  line-height: var(--line-height-body) !important;
+  font-size: var(--font-size-body) !important;
+  color: var(--color-body-text) !important;
+}
+
+.recognition-item strong {
+  color: var(--color-primary-text) !important;
+  font-weight: var(--font-weight-semibold) !important;
+}
+
+/* Award - Apple style */
+.award-item {
+  margin-bottom: var(--spacing-md);
+  padding: 0;
+  background-color: transparent;
+  border-left: none;
+  border-radius: 0;
+  line-height: var(--line-height-body) !important;
+  font-size: var(--font-size-body) !important;
+  color: var(--color-body-text) !important;
+}
+
+.award-item strong {
+  color: var(--color-primary-text) !important;
+  font-weight: var(--font-weight-semibold) !important;
+}
+
+/* Lists - Apple style */
 .page__content ul, 
 .page__content ol {
-  font-size: 0.9375rem !important; /* 15px - match body text */
-  line-height: 1.75 !important;
-  margin-bottom: 1.25em !important;
-  padding-left: 1.5em !important;
+  font-size: var(--font-size-body) !important;
+  line-height: var(--line-height-body) !important;
+  margin-bottom: var(--spacing-xl) !important;
+  padding-left: var(--spacing-xl) !important;
+  color: var(--color-body-text) !important;
 }
 
 .page__content li {
-  margin-bottom: 0.5em !important;
+  margin-bottom: var(--spacing-md) !important;
+  color: var(--color-body-text) !important;
+  font-weight: var(--font-weight-regular) !important;
 }
 
-/* Links - Subtle, clear styling */
+.page__content li strong {
+  color: var(--color-primary-text) !important;
+  font-weight: var(--font-weight-semibold) !important;
+}
+
+/* Links - Apple Blue */
 .page__content a {
-  color: #0071e3 !important; /* Apple Blue */
+  color: var(--color-link) !important;
   text-decoration: none !important;
-  border-bottom: 1px solid rgba(0, 113, 227, 0.3) !important;
-  transition: border-color 0.2s ease !important;
+  border-bottom: 1px solid var(--color-border) !important;
+  transition: border-color 0.2s ease, color 0.2s ease !important;
+  font-weight: var(--font-weight-regular) !important;
 }
 
 .page__content a:hover {
-  border-bottom-color: #0071e3 !important;
+  border-bottom-color: var(--color-link-hover) !important;
+  color: var(--color-link-hover) !important;
 }
 
-/* Blockquotes - Subtle, elegant */
+.page__content a:active {
+  color: var(--color-link-active) !important;
+}
+
+/* Blockquotes - Apple style */
 .page__content blockquote {
-  font-size: 0.9375rem !important; /* 15px - match body text */
-  line-height: 1.75 !important;
-  color: #6e6e73 !important;
-  border-left: 3px solid #d2d2d7 !important;
-  padding-left: 1.25em !important;
-  margin: 1.5em 0 !important;
-  font-style: italic !important;
+  font-size: var(--font-size-body) !important;
+  line-height: var(--line-height-body) !important;
+  color: var(--color-secondary-text) !important;
+  border-left: 1px solid #d2d2d7 !important;
+  padding-left: var(--spacing-md) !important;
+  margin: var(--spacing-2xl) 0 !important;
+  font-style: normal !important;
+  font-weight: var(--font-weight-regular) !important;
 }
 
-/* Author Profile - Subtle, professional */
+/* Author Profile - Apple style */
 .author__content {
-  color: #6e6e73 !important;
-  font-size: 0.9375rem !important;
+  color: var(--color-secondary-text) !important;
+  font-size: var(--font-size-small) !important;
+  font-weight: var(--font-weight-regular) !important;
+  line-height: var(--line-height-body) !important;
 }
 
-/* Remove sidebar clutter - Focus on content */
+/* Sidebar */
 @media (min-width: 80em) {
   .sidebar {
     width: 240px !important;
   }
   
   .page__content {
-    max-width: 900px !important;
+    max-width: var(--max-width-content) !important;
   }
 }
 
-/* Generous whitespace */
+/* Compact whitespace */
 .page__content > * {
-  margin-bottom: 1.5em !important;
+  margin-bottom: var(--spacing-md) !important;
 }
 
-/* Publication links - Clear hierarchy */
-.page__content a[href^="https://github.com"],
-.page__content a[href^="https://arxiv.org"],
-.page__content a[href^="https://www.nature.com"],
-.page__content a[href^="https://www.sciencedirect.com"] {
-  font-size: 0.875rem !important;
-  color: #0071e3 !important;
+/* Responsive */
+@media (max-width: 768px) {
+  :root {
+    --padding-content: var(--padding-content-mobile);
+  }
+  
+  .profile-name {
+    font-size: 40px !important;
+    line-height: 1.1 !important;
+  }
+  
+  .contact-info {
+    font-size: var(--font-size-small) !important;
+    line-height: 1.4 !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-sm);
+  }
+  
+  .contact-info a {
+    display: inline-block;
+    margin: 0;
+  }
+  
+  .contact-separator {
+    display: none;
+  }
+  
+  .profile-image {
+    width: 140px;
+    height: 140px;
+  }
+  
+  .experience-header,
+  .publication-header {
+    flex-direction: column;
+  }
+  
+  .experience-period {
+    margin-top: 0;
+  }
+  
+  .page__content {
+    padding: 0 var(--padding-content-mobile) !important;
+  }
+  
+  .page__content h2 {
+    margin-top: var(--spacing-4xl) !important;
+  }
 }
-
