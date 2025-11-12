@@ -246,6 +246,12 @@ body {
   font-weight: var(--font-weight-semibold) !important;
 }
 
+.education-period {
+  color: var(--color-secondary-text) !important;
+  font-size: var(--font-size-small) !important;
+  font-weight: var(--font-weight-regular) !important;
+}
+
 /* Publications - Apple style */
 .publication-item {
   margin-bottom: var(--spacing-lg);

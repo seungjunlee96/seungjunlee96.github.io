@@ -50,11 +50,11 @@ I am an AI research engineer focused on advancing healthcare and engineering thr
 ## Education
 
 <div class="education-item">
-  <strong>M.Sc. in Biomedical Engineering</strong>, University of Ulsan College of Medicine
+  <strong>M.S. in Biomedical Engineering</strong>, University of Ulsan College of Medicine, Asan Medical Center | Seoul, Republic of Korea | Supervised by Prof. Namkug Kim | <span class="education-period">September 2020 – August 2022</span> | Thesis: Emergency Triage of Brain Computed Tomography via Anomaly Detection with a Deep Generative Model
 </div>
 
 <div class="education-item">
-  <strong>B.S. in Naval Architecture and Ocean Engineering</strong>, Minor in Mechanical Engineering, Seoul National University
+  <strong>B.S. in Naval Architecture and Ocean Engineering</strong>, Minor in Mechanical Engineering, Seoul National University | Seoul, Republic of Korea | <span class="education-period">March 2015 – August 2020</span> | Thesis: Deep Learning on Radar Centric 3D Object Detection
 </div>
 
 ## Publications
@@ -82,7 +82,7 @@ I am an AI research engineer focused on advancing healthcare and engineering thr
 ## Presentations
 
 <div class="presentation-item">
-  <strong>Unremarkable Brain CT Screening via Modality-Specific Adaptation of a Multimodal Foundation Model: A Retrospective Clinical Simulation Study</strong>. <span class="presentation-venue">Radiological Society of North America (RSNA)</span> | <span class="presentation-type">Poster Presentation</span> | <span class="presentation-period">December 2025</span>
+  <strong>Unremarkable Brain CT Screening via Modality-Specific Adaptation of a Multimodal Foundation Model: A Retrospective Clinical Simulation Study</strong>. <span class="presentation-venue">Radiological Society of North America (RSNA)</span> | <span class="presentation-type">Poster Presentation</span> | <span class="presentation-period">December 2025</span> | Chicago, IL, United States
 </div>
 
 <div class="presentation-item">
