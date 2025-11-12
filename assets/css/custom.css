@@ -350,6 +350,41 @@ body {
   font-weight: var(--font-weight-semibold) !important;
 }
 
+/* Presentation - Apple style */
+.presentation-item {
+  margin-bottom: var(--spacing-lg);
+  padding: 0;
+  background-color: transparent;
+  border-left: none;
+  border-radius: 0;
+  line-height: var(--line-height-body) !important;
+  font-size: var(--font-size-body) !important;
+  color: var(--color-body-text) !important;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.presentation-item strong {
+  color: var(--color-primary-text) !important;
+  font-weight: var(--font-weight-semibold) !important;
+}
+
+.presentation-venue {
+  color: var(--color-secondary-text) !important;
+  font-weight: var(--font-weight-regular) !important;
+}
+
+.presentation-type {
+  color: var(--color-secondary-text) !important;
+  font-weight: var(--font-weight-regular) !important;
+}
+
+.presentation-period {
+  color: var(--color-secondary-text) !important;
+  font-size: var(--font-size-small) !important;
+  font-weight: var(--font-weight-regular) !important;
+}
+
 /* Recognition - Apple style */
 .recognition-item {
   margin-bottom: var(--spacing-md);

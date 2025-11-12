@@ -60,6 +60,32 @@ I am an AI research engineer focused on advancing healthcare and engineering thr
   <strong>Deep Learning on Radar-Centric 3D Object Detection</strong> (2020). <em>arXiv preprint arXiv:2003.00851</em>. <strong>Seungjun Lee</strong>. <a href="https://arxiv.org/abs/2003.00851" class="pub-link" rel="noopener noreferrer" target="_blank"><span class="link-icon">📄</span> Paper</a> | <span class="citation-count">📊 21 citations</span>
 </div>
 
+## Presentations
+
+<div class="presentation-item">
+  <strong>Unremarkable Brain CT Screening via Modality-Specific Adaptation of a Multimodal Foundation Model: A Retrospective Clinical Simulation Study</strong>. <span class="presentation-venue">Radiological Society of North America (RSNA)</span> | <span class="presentation-type">Scientific Poster Sessions - Digital Presentation</span> | <span class="presentation-period">December 2025</span>
+</div>
+
+<div class="presentation-item">
+  <strong>Emergency Triage of Brain Computed Tomography via Anomaly Detection with a Deep Generative Model</strong>. <span class="presentation-venue">한국을 빛내는 사람들 (한빛사), Biological Research Information Center (BRIC)</span> | <span class="presentation-type">Webinar | Interview</span> | <span class="presentation-period">October 2022</span> | <a href="https://www.youtube.com/watch?si=XjIPMPDy_V2AfW6X&v=tg1iwNfa_pw&feature=youtu.be" class="pub-link" rel="noopener noreferrer" target="_blank"><span class="link-icon">🎥</span> Video</a> | <a href="https://www.ibric.org/bric/hanbitsa/han-interview.do?mode=view&id=78947&authorId=38395#!/list" class="pub-link" rel="noopener noreferrer" target="_blank"><span class="link-icon">🔗</span> Interview</a>
+</div>
+
+<div class="presentation-item">
+  <strong>3D Medical Image Synthesis of Brain Computed Tomography via a Conditional Generative Adversarial Network</strong>. <span class="presentation-venue">Asian Oceanian Congress of Radiology & Korean Society of Radiology</span> | <span class="presentation-type">Poster Presentation</span> | <span class="presentation-period">September 2022</span> | Seoul, Republic of Korea
+</div>
+
+<div class="presentation-item">
+  <strong>Interpretable Identification of Various Diseases in the Emergency Brain CTs Using Anomaly Detection with a Deep Neural Network Trained Only with Normal Brain CTs</strong>. <span class="presentation-venue">Radiological Society of North America (RSNA)</span> | <span class="presentation-type">Oral Presentation | Interview</span> | <span class="presentation-period">December 2021</span> | Chicago, IL, United States | <a href="https://www.auntminnie.com/clinical-news/ct/article/15629598/deep-learning-algorithm-triages-emergency-head-cts" class="pub-link" rel="noopener noreferrer" target="_blank"><span class="link-icon">🔗</span> Link</a>
+</div>
+
+<div class="presentation-item">
+  <strong>Interpretable Identification of Various Diseases in the Emergency Brain CTs Using Anomaly Detection with a Deep Neural Network Trained Only with Normal Brain CTs</strong>. <span class="presentation-venue">Korean Society of Radiology</span> | <span class="presentation-type">Oral Presentation</span> | <span class="presentation-period">September 2021</span> | Seoul, Republic of Korea
+</div>
+
+<div class="presentation-item">
+  <strong>Unsupervised Anomaly Detection on Brain CT with a Style-Based Generative Adversarial Network</strong>. <span class="presentation-venue">Korean Society of Artificial Intelligence in Medicine (KoSAIM)</span> | <span class="presentation-type">Oral Presentation | Best Presentation Award</span> | <span class="presentation-period">August 2020</span> | Seoul, Republic of Korea
+</div>
+
 ## Patents
 
 <div class="patent-item">
