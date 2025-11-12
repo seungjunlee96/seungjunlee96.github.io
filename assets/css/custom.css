@@ -439,6 +439,12 @@ body {
   font-weight: var(--font-weight-semibold) !important;
 }
 
+.award-period {
+  color: var(--color-secondary-text) !important;
+  font-size: var(--font-size-small) !important;
+  font-weight: var(--font-weight-regular) !important;
+}
+
 /* Lists - Apple style */
 .page__content ul, 
 .page__content ol {

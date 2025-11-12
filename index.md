@@ -35,16 +35,31 @@ classes: wide
   </div>
 </div>
 
-I am an AI research engineer focused on advancing healthcare and engineering through innovative AI solutions. My expertise lies in deep generative models, anomaly detection, and medical image analysis, with a proven track record of publications in top-tier journals including *Nature Communications*.
+I am an AI research engineer focused on advancing healthcare and engineering through innovative AI solutions. My research spans deep generative models, anomaly detection, and medical image analysis, with a proven track record of publications in top-tier journals including *Nature Communications*.
+
+**Current Research Focus**: I am currently developing AI-driven medical device solutions for neuroimaging diagnostics, with particular emphasis on multimodal foundation models, synthetic medical image generation, and amyloid burden prediction without expensive PET scans. My recent work explores latent diffusion models for generating synthetic PET images and masked multimodal-multitask learning frameworks for handling missing clinical data.
+
+**Research Interests**: 
+- Deep generative models (GANs, VAEs, Diffusion Models) for medical imaging
+- Anomaly detection in medical images for diagnostic triage
+- Multimodal learning and foundation models for healthcare
+- Synthetic data generation to reduce reliance on expensive imaging modalities
+- Medical image analysis and computer vision
+
+**Technical Expertise**: Deep Learning (PyTorch, TensorFlow), Medical Image Processing, Computer Vision, Multimodal Learning, Generative Models, Anomaly Detection, Clinical AI Applications
 
 ## Professional Experience
 
 <div class="experience-item">
-  <strong>Research Scientist/Engineer</strong>, VUNO Inc. <span class="experience-period">March 2024 – Present</span>
+  <strong>Research Scientist/Engineer</strong>, VUNO Inc. <span class="experience-period">March 2024 – Present</span>. Contributing to AI-driven medical device development, including diagnostic tools for neuroimaging.
 </div>
 
 <div class="experience-item">
-  <strong>Machine Learning Engineer</strong>, MakinaRocks <span class="experience-period">June 2022 – March 2024</span>
+  <strong>Machine Learning Engineer</strong>, MakinaRocks <span class="experience-period">June 2022 – March 2024</span>. Developed and deployed ML models for industrial applications, focusing on anomaly detection and optimization.
+</div>
+
+<div class="experience-item">
+  <strong>Medical AI Researcher</strong>, Asan Medical Center <span class="experience-period">March 2020 – June 2022</span>. Conducted research on medical imaging AI, including generative models for diagnostic triage.
 </div>
 
 ## Education
@@ -86,7 +101,11 @@ I am an AI research engineer focused on advancing healthcare and engineering thr
 </div>
 
 <div class="presentation-item">
-  <strong>Emergency Triage of Brain Computed Tomography via Anomaly Detection with a Deep Generative Model</strong>. <span class="presentation-venue">한국을 빛내는 사람들 (한빛사), Biological Research Information Center (BRIC)</span> | <span class="presentation-type">Webinar | Interview</span> | <span class="presentation-period">October 2022</span> | <a href="https://www.youtube.com/watch?si=XjIPMPDy_V2AfW6X&v=tg1iwNfa_pw&feature=youtu.be" class="pub-link" rel="noopener noreferrer" target="_blank">Video</a> | <a href="https://www.ibric.org/bric/hanbitsa/han-interview.do?mode=view&id=78947&authorId=38395#!/list" class="pub-link" rel="noopener noreferrer" target="_blank">Interview</a>
+  <strong>Predicting Amyloid Burden Using a Masked Multimodal-Multitask Deep Learning Framework with Latent Diffusion-based Synthetic PET</strong>. <span class="presentation-venue">Alzheimer's Association International Conference (AAIC)</span> | <span class="presentation-period">July 2025</span> | <a href="https://alz.confex.com/alz/2025/meetingapp.cgi/Paper/110185" class="pub-link" rel="noopener noreferrer" target="_blank">Link</a>
+</div>
+
+<div class="presentation-item">
+  <strong>Predicting Amyloid Burden Without PET Scans: A Multimodal Attention-Based Deep Learning Approach</strong>. <span class="presentation-venue">AD/PD™ 2025 Alzheimer's & Parkinson's Diseases Conference</span> | <span class="presentation-type">On-Demand Oral Presentation | Poster Presentation</span> | <span class="presentation-period">April 2025</span> | Vienna, Austria
 </div>
 
 <div class="presentation-item">
@@ -94,7 +113,7 @@ I am an AI research engineer focused on advancing healthcare and engineering thr
 </div>
 
 <div class="presentation-item">
-  <strong>Interpretable Identification of Various Diseases in the Emergency Brain CTs Using Anomaly Detection with a Deep Neural Network Trained Only with Normal Brain CTs</strong>. <span class="presentation-venue">Radiological Society of North America (RSNA)</span> | <span class="presentation-type">Oral Presentation</span> | <span class="presentation-period">December 2021</span> | Chicago, IL, United States | <a href="https://www.auntminnie.com/clinical-news/ct/article/15629598/deep-learning-algorithm-triages-emergency-head-cts" class="pub-link" rel="noopener noreferrer" target="_blank">Interview</a>
+  <strong>Emergency Triage of Brain Computed Tomography via Anomaly Detection with a Deep Generative Model</strong>. <span class="presentation-venue">한국을 빛내는 사람들 (한빛사), Biological Research Information Center (BRIC)</span> | <span class="presentation-type">Webinar | Interview</span> | <span class="presentation-period">October 2022</span> | <a href="https://www.youtube.com/watch?si=XjIPMPDy_V2AfW6X&v=tg1iwNfa_pw&feature=youtu.be" class="pub-link" rel="noopener noreferrer" target="_blank">Video</a> | <a href="https://www.ibric.org/bric/hanbitsa/han-interview.do?mode=view&id=78947&authorId=38395#!/list" class="pub-link" rel="noopener noreferrer" target="_blank">Interview</a>
 </div>
 
 <div class="presentation-item">
@@ -102,13 +121,11 @@ I am an AI research engineer focused on advancing healthcare and engineering thr
 </div>
 
 <div class="presentation-item">
-  <strong>Unsupervised Anomaly Detection on Brain CT with a Style-Based Generative Adversarial Network</strong>. <span class="presentation-venue">Korean Society of Artificial Intelligence in Medicine (KoSAIM)</span> | <span class="presentation-type">Oral Presentation | Best Presentation Award</span> | <span class="presentation-period">August 2020</span> | Seoul, Republic of Korea
+  <strong>Interpretable Identification of Various Diseases in the Emergency Brain CTs Using Anomaly Detection with a Deep Neural Network Trained Only with Normal Brain CTs</strong>. <span class="presentation-venue">Radiological Society of North America (RSNA)</span> | <span class="presentation-type">Oral Presentation</span> | <span class="presentation-period">December 2021</span> | Chicago, IL, United States | <a href="https://www.auntminnie.com/clinical-news/ct/article/15629598/deep-learning-algorithm-triages-emergency-head-cts" class="pub-link" rel="noopener noreferrer" target="_blank">Interview</a>
 </div>
 
-## Patents
-
-<div class="patent-item">
-  <strong>Method of Detecting Anomaly Region in Medical Image, Anomaly Region Detection Device Performing Method, and Method of Training Neural Network Used to Detect Anomaly Region in Medical Image</strong>. Publication No. 1020220103852 A | July 2022
+<div class="presentation-item">
+  <strong>Unsupervised Anomaly Detection on Brain CT with a Style-Based Generative Adversarial Network</strong>. <span class="presentation-venue">Korean Society of Artificial Intelligence in Medicine (KoSAIM)</span> | <span class="presentation-type">Oral Presentation | Best Presentation Award</span> | <span class="presentation-period">August 2020</span> | Seoul, Republic of Korea
 </div>
 
 ## Recognitions
@@ -125,20 +142,26 @@ I am an AI research engineer focused on advancing healthcare and engineering thr
   Featured on <strong>AuntMinnie</strong>: "Deep-Learning Algorithm Triages Emergency Head CTs" (<a href="https://www.auntminnie.com/clinical-news/ct/article/15629651/deep-learning-algorithm-triages-emergency-head-cts" rel="noopener noreferrer" target="_blank">Link</a>).
 </div>
 
+## Patents
+
+<div class="patent-item">
+  <strong>Method of Detecting Anomaly Region in Medical Image, Anomaly Region Detection Device Performing Method, and Method of Training Neural Network Used to Detect Anomaly Region in Medical Image</strong>. Publication No. 1020220103852 A | July 2022
+</div>
+
 ## Honors and Awards
 
 <div class="award-item">
-  <strong>Best Presentation Award</strong>, Korean Society of Artificial Intelligence in Medicine (KoSAIM), "Unsupervised Anomaly Detection with a Style-Based Generative Adversarial Network" | October 2020
+  <strong>Best Presentation Award</strong>, Korean Society of Artificial Intelligence in Medicine (KoSAIM), "Unsupervised Anomaly Detection with a Style-Based Generative Adversarial Network" | <span class="award-period">October 2020</span>
 </div>
 
 <div class="award-item">
-  <strong>Minister of Trade, Industry and Energy Award</strong>, Creative Comprehensive Design Competition | December 2018
+  <strong>Minister of Trade, Industry and Energy Award</strong>, Creative Comprehensive Design Competition | <span class="award-period">December 2018</span>
 </div>
 
 <div class="award-item">
-  <strong>Grand Prize</strong>, 7th Creative Design Festival, Seoul National University College of Engineering | September 2018
+  <strong>Grand Prize</strong>, 7th Creative Design Festival, Seoul National University College of Engineering | <span class="award-period">September 2018</span>
 </div>
 
 <div class="award-item">
-  <strong>Bronze Prize</strong>, 36th National Collegiate Mathematics Competition (Non-Mathematics Majors), Korean Mathematical Society | December 2017
+  <strong>Bronze Prize</strong>, 36th National Collegiate Mathematics Competition (Non-Mathematics Majors), Korean Mathematical Society | <span class="award-period">December 2017</span>
 </div>
