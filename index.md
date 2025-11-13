@@ -101,7 +101,7 @@ I am an AI research engineer focused on advancing healthcare and engineering thr
 </div>
 
 <div class="presentation-item">
-  <strong>Predicting Amyloid Burden Using a Masked Multimodal-Multitask Deep Learning Framework with Latent Diffusion-based Synthetic PET</strong>. <span class="presentation-venue">Alzheimer's Association International Conference (AAIC)</span> | <span class="presentation-period">July 2025</span> | <a href="https://alz.confex.com/alz/2025/meetingapp.cgi/Paper/110185" class="pub-link" rel="noopener noreferrer" target="_blank">Link</a>
+  <strong>Predicting Amyloid Burden Using a Masked Multimodal-Multitask Deep Learning Framework with Latent Diffusion-based Synthetic PET</strong>. <span class="presentation-venue">Alzheimer's Association International Conference (AAIC)</span> | <span class="presentation-period">July 2025</span> | <a href="https://alz.confex.com/alz/2025/meetingapp.cgi/Paper/110185" class="pub-link" rel="noopener noreferrer" target="_blank">Link</a> | <span class="citation-count">📊 2 citations</span>
 </div>
 
 <div class="presentation-item">
@@ -113,7 +113,7 @@ I am an AI research engineer focused on advancing healthcare and engineering thr
 </div>
 
 <div class="presentation-item">
-  <strong>Emergency Triage of Brain Computed Tomography via Anomaly Detection with a Deep Generative Model</strong>. <span class="presentation-venue">한국을 빛내는 사람들 (한빛사), Biological Research Information Center (BRIC)</span> | <span class="presentation-type">Webinar | Interview</span> | <span class="presentation-period">October 2022</span> | <a href="https://www.youtube.com/watch?si=XjIPMPDy_V2AfW6X&v=tg1iwNfa_pw&feature=youtu.be" class="pub-link" rel="noopener noreferrer" target="_blank">Video</a> | <a href="https://www.ibric.org/bric/hanbitsa/han-interview.do?mode=view&id=78947&authorId=38395#!/list" class="pub-link" rel="noopener noreferrer" target="_blank">Interview</a>
+  <strong>Emergency Triage of Brain Computed Tomography via Anomaly Detection with a Deep Generative Model</strong>. <span class="presentation-venue">한국을 빛내는 사람들 (한빛사), Biological Research Information Center (BRIC)</span> | <span class="presentation-type">Webinar | Interview</span> | <span class="presentation-period">October 2022</span> | <a href="https://www.youtube.com/watch?si=XjIPMPDy_V2AfW6X&v=tg1iwNfa_pw&feature=youtu.be" class="pub-link" rel="noopener noreferrer" target="_blank">Video</a> | <a href="https://www.ibric.org/bric/hanbitsa/han-interview.do?mode=view&id=78947&authorId=38395#!/list" class="pub-link" rel="noopener noreferrer" target="_blank">Interview</a> | <span class="citation-count">📊 26 citations</span>
 </div>
 
 <div class="presentation-item">
@@ -121,7 +121,7 @@ I am an AI research engineer focused on advancing healthcare and engineering thr
 </div>
 
 <div class="presentation-item">
-  <strong>Interpretable Identification of Various Diseases in the Emergency Brain CTs Using Anomaly Detection with a Deep Neural Network Trained Only with Normal Brain CTs</strong>. <span class="presentation-venue">Radiological Society of North America (RSNA)</span> | <span class="presentation-type">Oral Presentation</span> | <span class="presentation-period">December 2021</span> | Chicago, IL, United States | <a href="https://www.auntminnie.com/clinical-news/ct/article/15629598/deep-learning-algorithm-triages-emergency-head-cts" class="pub-link" rel="noopener noreferrer" target="_blank">Interview</a>
+  <strong>Interpretable Identification of Various Diseases in the Emergency Brain CTs Using Anomaly Detection with a Deep Neural Network Trained Only with Normal Brain CTs</strong>. <span class="presentation-venue">Radiological Society of North America (RSNA)</span> | <span class="presentation-type">Oral Presentation</span> | <span class="presentation-period">December 2021</span> | Chicago, IL, United States | <a href="https://www.auntminnie.com/clinical-news/ct/article/15629598/deep-learning-algorithm-triages-emergency-head-cts" class="pub-link" rel="noopener noreferrer" target="_blank">Interview</a> | <span class="citation-count">📊 16 citations</span>
 </div>
 
 <div class="presentation-item">
