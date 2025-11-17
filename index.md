@@ -37,17 +37,6 @@ classes: wide
 
 I am an AI research engineer focused on advancing healthcare and engineering through innovative AI solutions. My research spans deep generative models, anomaly detection, and medical image analysis, with a proven track record of publications in top-tier journals including *Nature Communications*.
 
-**Current Research Focus**: I am currently developing AI-driven medical device solutions for neuroimaging diagnostics, with particular emphasis on multimodal foundation models, synthetic medical image generation, and amyloid burden prediction without expensive PET scans. My recent work explores latent diffusion models for generating synthetic PET images and masked multimodal-multitask learning frameworks for handling missing clinical data.
-
-**Research Interests**: 
-- Deep generative models (GANs, VAEs, Diffusion Models) for medical imaging
-- Anomaly detection in medical images for diagnostic triage
-- Multimodal learning and foundation models for healthcare
-- Synthetic data generation to reduce reliance on expensive imaging modalities
-- Medical image analysis and computer vision
-
-**Technical Expertise**: Deep Learning (PyTorch, TensorFlow), Medical Image Processing, Computer Vision, Multimodal Learning, Generative Models, Anomaly Detection, Clinical AI Applications
-
 ## Professional Experience
 
 <div class="experience-item">
@@ -79,7 +68,7 @@ I am an AI research engineer focused on advancing healthcare and engineering thr
 </div>
 
 <div class="publication-item publication-highlight nature-comm">
-  <strong>Emergency Triage of Brain Computed Tomography via Anomaly Detection with a Deep Generative Model</strong> (2022). <em>Nature Communications</em>. <strong>Seungjun Lee</strong>, Boryeong Jeong, Minjee Kim, Ryoungwoo Jang, Wooyul Paik, Jiseon Kang, Won Jung Chung, Gil-Sun Hong, & Namkug Kim. <a href="https://www.nature.com/articles/s41467-022-31808-0" class="pub-link" rel="noopener noreferrer" target="_blank">Paper</a> | <a href="https://github.com/seungjunlee96/emergency-triage-of-brain-computed-tomography-via-anomaly-detection-with-a-deep-generative-model" class="pub-link" rel="noopener noreferrer" target="_blank">Code</a> | <span class="citation-count">26 citations</span>
+  <strong>Emergency Triage of Brain Computed Tomography via Anomaly Detection with a Deep Generative Model</strong> (2022). <em>Nature Communications</em>. <strong>Seungjun Lee</strong>, Boryeong Jeong, Minjee Kim, Ryoungwoo Jang, Wooyul Paik, Jiseon Kang, Won Jung Chung, Gil-Sun Hong, & Namkug Kim. <a href="https://www.nature.com/articles/s41467-022-31808-0" class="pub-link" rel="noopener noreferrer" target="_blank">Paper</a> | <a href="https://github.com/seungjunlee96/emergency-triage-of-brain-computed-tomography-via-anomaly-detection-with-a-deep-generative-model" class="pub-link" rel="noopener noreferrer" target="_blank">Code</a> | <a href="https://www.corelinesoft.com/en/" class="pub-link" rel="noopener noreferrer" target="_blank">Technology Transfer & Commercialization to Coreline Soft Co., Ltd.</a> | <a href="https://www.medifonews.com/news/article.html?no=182863" class="pub-link" rel="noopener noreferrer" target="_blank">21st Pfizer Medical Research Award</a> | <span class="citation-count">26 citations</span>
 </div>
 
 <div class="publication-item">
