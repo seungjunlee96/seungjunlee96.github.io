@@ -15,7 +15,7 @@ classes: wide
   </p>
 </div>
 
-I am a Research Scientist specializing in Medical AI. My expertise lies in Anomaly Detection, Deep Generative Models, and Multi-modal Foundation Models, with a proven track record of translating theoretical research into regulatory-grade medical solutions.
+I am a Research Scientist specializing in Healthcare AI. My expertise lies in Anomaly Detection, Deep Generative Models, and Multi-modal Foundation Models, with a proven track record of translating theoretical research into regulatory-grade medical solutions.
 
 Currently at VUNO Inc., I spearhead the development of neuroimaging diagnostics, focusing on modality-specific adaptation. Previously at MakinaRocks, I engineered production-level MLOps pipelines, optimizing latency for industrial deployment. My research has been published in top-tier journals, including Nature Communications, and recognized with the Pfizer Medical Research Award.
 
