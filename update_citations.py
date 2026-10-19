@@ -32,12 +32,17 @@ class CitationUpdater:
             url = f"{self.BASE_URL}/{query_id}"
             params = {"fields": "citationCount,title"}
             
-            response = requests.get(url, headers=self.HEADERS, params=params, timeout=10)
+            for attempt in range(3):
+                response = requests.get(url, headers=self.HEADERS, params=params, timeout=10)
+                if response.status_code == 429 and attempt < 2:
+                    time.sleep(2 * (attempt + 1))
+                    continue
+                break
             
             # Handle 404 cleanly
             if response.status_code == 404:
                 print(f"⚠ Paper not found in API: {identifier}")
-            return None
+                return None
     
             response.raise_for_status()
             data = response.json()
@@ -51,6 +56,36 @@ class CitationUpdater:
             print(f"⚠ Error fetching {identifier}: {e}")
             return None
     
+    def get_batch_citation_counts(self, papers: list) -> dict:
+        """Fetch citation counts for all papers in a single batch request."""
+        url = f"{self.BASE_URL}/batch"
+        params = {"fields": "citationCount,title"}
+        ids = [f"{p['type']}:{p['id']}" for p in papers]
+        try:
+            for attempt in range(3):
+                response = requests.post(url, headers=self.HEADERS, params=params, json={"ids": ids}, timeout=15)
+                if response.status_code == 429 and attempt < 2:
+                    time.sleep(3 * (attempt + 1))
+                    continue
+                break
+            if response.status_code == 200:
+                results = {}
+                for paper, item in zip(papers, response.json()):
+                    if item and item.get("citationCount") is not None:
+                        results[paper["unique_url_part"]] = item["citationCount"]
+                        print(f"   Found: {item['citationCount']} citations for '{item.get('title', '')[:50]}...'")
+                return results
+        except Exception as e:
+            print(f"⚠ Batch request failed ({e}), falling back to individual requests...")
+        
+        results = {}
+        for paper in papers:
+            count = self.get_citation_count(paper["id"], paper["type"])
+            if count is not None:
+                results[paper["unique_url_part"]] = count
+            time.sleep(1.5)
+        return results
+
     def update_citations(self) -> bool:
         """Update citation counts in the markdown file."""
         
@@ -92,6 +127,7 @@ class CitationUpdater:
             print(f"❌ Error: File '{self.cv_path}' not found")
             return False
         
+        counts = self.get_batch_citation_counts(papers)
         changes_made = False
         new_lines = []
 
@@ -100,29 +136,26 @@ class CitationUpdater:
             
             # Check if this line contains one of our papers
             for paper in papers:
-                if paper["unique_url_part"] in line:
-                    print(f"🔍 Processing paper: {paper['unique_url_part']}...")
+                key = paper["unique_url_part"]
+                if key in line and key in counts:
+                    count = counts[key]
+                    # Remove existing citation count if present (handles with or without emoji, | or ·)
+                    clean_line = re.sub(
+                        r'\s*(?:\||·)\s*<span class="citation-count">(?:📊 )?\d+ citations?</span>\s*',
+                        '',
+                        line.rstrip()
+                    )
                     
-                    count = self.get_citation_count(paper["id"], paper["type"])
-                    
-                    if count is not None:
-                        # Remove existing citation count if present (handles with or without emoji)
-                        # Pattern matches: | <span class="citation-count">(📊 )?X citations</span>
-                        clean_line = re.sub(
-                            r'\s*\|\s*<span class="citation-count">(📊 )?\d+ citations</span>\s*',
-                            '',
-                            line.rstrip()
-                        )
-                        
-                        # Append new count (without emoji)
+                    # Append new count inside </div> if line ends with </div>, else at end of line
+                    badge = f' · <span class="citation-count">{count} citations</span>'
+                    if clean_line.endswith('</div>'):
+                        updated_line = f"{clean_line[:-6]}{badge}</div>\n"
+                    else:
                         updated_line = f"{clean_line} | <span class=\"citation-count\">{count} citations</span>\n"
-                        
-                        if updated_line != line:
-                            changes_made = True
-                            print(f"   ✓ Updated line.")
-            
-                    # Pause briefly to be nice to the API
-                    time.sleep(0.5)
+                    
+                    if updated_line != line:
+                        changes_made = True
+                        print(f"   ✓ Updated line for {key}.")
                     break  # Stop checking other papers for this line
             
             new_lines.append(updated_line)
