@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ site.title }}</title>
+  <meta name="description" content="{{ site.description }}">
+  <link rel="canonical" href="{{ site.url }}">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="{{ site.title }} | {{ site.subtitle }}">
+  <meta property="og:description" content="{{ site.description }}">
+  <meta property="og:url" content="{{ site.url }}">
+  <meta property="og:image" content="{{ site.url }}/assets/images/about/profile.jpg">
+  <meta name="twitter:card" content="summary">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Seungjun Lee",
+    "jobTitle": "Research Scientist",
+    "url": "{{ site.url }}",
+    "worksFor": { "@type": "Organization", "name": "VUNO Inc." },
+    "sameAs": [
+      "https://scholar.google.com/citations?user=VfYHEWgAAAAJ",
+      "https://github.com/seungjunlee96",
+      "https://www.linkedin.com/in/seungjun-lee-3293a1185/"
+    ]
+  }
+  </script>
+</head>
+<body>
+  <main class="container">
+    {{ content }}
+    <footer>Last updated {{ site.time | date: "%B %Y" }}</footer>
+  </main>
+</body>
+</html>
