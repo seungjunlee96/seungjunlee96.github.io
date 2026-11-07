@@ -33,7 +33,7 @@ title: ""
 <div class="title">Automated Idiopathic Normal Pressure Hydrocephalus Diagnosis via Artificial Intelligence–Based 3D T1 MRI Volumetric Analysis</div>
 <div class="authors">J.&nbsp;Lee, D.&nbsp;Kim, C.H.&nbsp;Suh, S.&nbsp;Yun, K.S.&nbsp;Choi, <b>Seungjun Lee</b>, et al.</div>
 <div class="venue">American Journal of Neuroradiology, 2025</div>
-<div class="meta"><a href="https://doi.org/10.3174/ajnr.A8489">Paper</a> · <span class="citation-count">14 citations</span></div>
+<div class="meta"><a href="https://doi.org/10.3174/ajnr.A8489">Paper</a> · <span class="citation-count">15 citations</span></div>
 </div>
 
 <div class="pub">
@@ -62,7 +62,7 @@ title: ""
 <div class="title">Deep Learning on Radar-Centric 3D Object Detection</div>
 <div class="authors"><b>Seungjun Lee</b></div>
 <div class="venue">arXiv preprint, 2020 <span class="badge">Sole author</span></div>
-<div class="meta"><a href="https://arxiv.org/abs/2003.00851">arXiv</a> · <span class="citation-count">24 citations</span></div>
+<div class="meta"><a href="https://arxiv.org/abs/2003.00851">arXiv</a> · <span class="citation-count">25 citations</span></div>
 </div>
 
 <h2>Conference Presentations</h2>

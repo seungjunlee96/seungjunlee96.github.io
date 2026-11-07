@@ -137,7 +137,7 @@ class CitationUpdater:
             # Check if this line contains one of our papers
             for paper in papers:
                 key = paper["unique_url_part"]
-                if key in line and key in counts:
+                if '<div class="meta">' in line and key in line and key in counts:
                     count = counts[key]
                     # Remove existing citation count if present (handles with or without emoji, | or ·)
                     clean_line = re.sub(
