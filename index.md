@@ -25,7 +25,7 @@ title: ""
 <div class="pub">
 <div class="title">Collaborative Generalist–Specialist AI for Safe Worklist Deprioritization of <span class="nw">Non-contrast</span> Brain Computed Tomography</div>
 <div class="authors"><b>Seungjun Lee</b>, W.&nbsp;Paik, G.&nbsp;Kim, W.J.&nbsp;Chung, <span class="nw">G.-S.&nbsp;Hong</span>*, <span class="nw">N.&nbsp;Kim*</span></div>
-<div class="venue">npj Digital Medicine, in press (published online 5 Nov 2026) <span class="badge">First author</span></div>
+<div class="venue">npj Digital Medicine, 2026 <span class="badge">First author</span></div>
 <div class="meta"><a href="https://www.nature.com/articles/s41746-026-03447-y">Paper</a></div>
 </div>
 
