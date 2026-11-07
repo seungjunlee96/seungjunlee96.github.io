@@ -5,6 +5,11 @@
 
 set -e  # 에러 발생 시 스크립트 중지
 
+# macOS 기본 Ruby(2.6)는 너무 오래됨 → Homebrew ruby@3.3 사용 (GitHub Pages 와 같은 3.3)
+if [ -x /opt/homebrew/opt/ruby@3.3/bin/ruby ]; then
+    export PATH="/opt/homebrew/opt/ruby@3.3/bin:$(/opt/homebrew/opt/ruby@3.3/bin/ruby -e 'print Gem.bindir'):$PATH"
+fi
+
 # 색상 정의
 RED='\033[0;31m'
 GREEN='\033[0;32m'
@@ -26,7 +31,7 @@ if command -v ruby &> /dev/null; then
 else
     echo -e "${RED}✗ Ruby is not installed.${NC}"
     echo "Please install Ruby first:"
-    echo "  brew install ruby"
+    echo "  brew install ruby@3.3"
     exit 1
 fi
 echo ""
