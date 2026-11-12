@@ -24,9 +24,9 @@ title: ""
 
 <div class="pub">
 <div class="title">Collaborative Generalist–Specialist AI for Safe Worklist Deprioritization of <span class="nw">Non-contrast</span> Brain Computed Tomography</div>
-<div class="authors"><b>Seungjun Lee</b>, W.&nbsp;Paik, G.&nbsp;Kim, W.J.&nbsp;Chung, <span class="nw">G.-S.&nbsp;Hong</span>*, <span class="nw">N.&nbsp;Kim*</span></div>
+<div class="authors"><b>Seungjun Lee</b>, W.&nbsp;Paik, G.&nbsp;Kim, W.J.&nbsp;Chung, <span class="nw">G.-S.&nbsp;Hong</span>, <span class="nw">N.&nbsp;Kim</span></div>
 <div class="venue">npj Digital Medicine, 2026 <span class="badge">First author</span></div>
-<div class="meta"><a href="https://www.nature.com/articles/s41746-026-03447-y">Paper</a></div>
+<div class="meta"><a href="https://www.nature.com/articles/s41746-026-03447-y">Paper</a> · <a href="https://github.com/seungjunlee96/BrainCT-CLIP">Code</a></div>
 </div>
 
 <div class="pub">
@@ -48,14 +48,14 @@ title: ""
 <div class="title">Enhancement of Evaluating Flatfoot on a Weight-Bearing Lateral Radiograph of the Foot with U-Net Based Semantic Segmentation on the Long Axis of Tarsal and Metatarsal Bones in an Active Learning Manner</div>
 <div class="authors">S.M.&nbsp;Ryu, K.&nbsp;Shin, S.W.&nbsp;Shin, <b>Seungjun Lee</b>, <span class="nw">N.&nbsp;Kim</span></div>
 <div class="venue">Computers in Biology and Medicine, 2022</div>
-<div class="meta"><a href="https://www.sciencedirect.com/science/article/abs/pii/S0010482522001925">Paper</a> · <span class="citation-count">21 citations</span></div>
+<div class="meta"><a href="https://doi.org/10.1016/j.compbiomed.2022.105400">Paper</a> · <span class="citation-count">21 citations</span></div>
 </div>
 
 <div class="pub">
 <div class="title">Enhancing Deep Learning-Based Classifiers with Inpainting Anatomical Side Markers (L/R Markers) for Multi-Center Trials</div>
 <div class="authors">K.D.&nbsp;Kim, K.&nbsp;Cho, M.&nbsp;Kim, K.H.&nbsp;Lee, <b>Seungjun Lee</b>, S.M.&nbsp;Lee, K.H.&nbsp;Lee, <span class="nw">N.&nbsp;Kim</span></div>
 <div class="venue">Computer Methods and Programs in Biomedicine, 2022</div>
-<div class="meta"><a href="https://www.sciencedirect.com/science/article/pii/S0169260722000906">Paper</a> · <span class="citation-count">9 citations</span></div>
+<div class="meta"><a href="https://doi.org/10.1016/j.cmpb.2022.106705">Paper</a> · <span class="citation-count">9 citations</span></div>
 </div>
 
 <div class="pub">
@@ -74,12 +74,12 @@ title: ""
 
 <div class="pub talk">
 <div class="title">Predicting Amyloid Burden Using a Masked Multimodal-Multitask Deep Learning Framework with Latent Diffusion-based Synthetic PET</div>
-<div class="venue">AAIC 2025 · Poster · <a href="https://alz.confex.com/alz/2025/meetingapp.cgi/Paper/110185">Abstract</a></div>
+<div class="venue">AAIC 2025 · Poster · <a href="https://doi.org/10.1002/alz70862_110185">Abstract</a></div>
 </div>
 
 <div class="pub talk">
 <div class="title">Predicting Amyloid Burden Without PET Scans: A Multimodal Attention-Based Deep Learning Approach</div>
-<div class="venue">AD/PD 2025, Vienna · Oral &amp; Poster</div>
+<div class="venue">AD/PD 2025, Vienna · Poster</div>
 </div>
 
 <div class="pub talk">
@@ -122,6 +122,7 @@ title: ""
 <li><b>Minister of Trade, Industry and Energy Award</b>, National Creative Comprehensive Design Competition, 2018</li>
 <li><b>Grand Prize</b>, Creative Design Fair, Seoul National University, 2018</li>
 <li><b>Bronze Prize</b>, National Mathematics Contest for University Students, Korean Mathematical Society, 2017</li>
+<li><b>Patent (pending):</b> Method and Apparatus for Generating Positron Emission Tomography (PET) Image Data Using Multiple Magnetic Resonance Images (MRI) and Plasma Biomarkers Based on an Artificial Neural Network (Korean patent application 10-2026-0203750), filed 2026</li>
 <li><b>Patent:</b> Method of Detecting Anomaly Region in Medical Image, Anomaly Region Detection Device Performing Method, and Method of Training Neural Network Used to Detect Anomaly Region in Medical Image (KR 10-2687055 B1), filed 2021, granted 2024</li>
 <li><b>Academic Service:</b> Invited Reviewer, <i>IEEE Transactions on Intelligent Vehicles</i></li>
 <li><b>Open Source:</b> <a href="https://github.com/seungjunlee96/lightning-generative-models">lightning-generative-models</a>, <a href="https://github.com/seungjunlee96/AnoGAN-pytorch">AnoGAN-pytorch</a>, <a href="https://github.com/seungjunlee96/Depthwise-Separable-Convolution_Pytorch">Depthwise-Separable-Convolution_Pytorch</a>, <a href="https://github.com/seungjunlee96/AI-for-Medicine">AI-for-Medicine</a> (~330 GitHub stars across public repositories)</li>
