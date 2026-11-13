@@ -102,7 +102,7 @@ title: ""
 <div class="entry"><div class="what"><b>Research Scientist</b><div class="org"><span class="inst">Asan Medical Center</span> · Multimodal foundation models (BrainCT-CLIP) &amp; clinical imaging AI</div></div><div class="when">Oct 2026 – Present</div></div>
 <div class="entry"><div class="what"><b>Research Scientist, Healthcare AI</b><div class="org"><span class="inst">DeepMetrics</span> · Clinical time-series &amp; time-to-event modeling for ICU mechanical ventilation</div></div><div class="when">Feb 2026 – Sep 2026</div></div>
 <div class="entry"><div class="what"><b>Research Scientist, BRAIN Team</b><div class="org"><span class="inst">VUNO Inc.</span> · Multimodal diffusion for MRI-to-PET synthesis; production core of FDA-cleared <span class="nw">VUNO Med®-DeepBrain™</span></div></div><div class="when">Mar 2024 – Feb 2026</div></div>
-<div class="entry"><div class="what"><b>Machine Learning Engineer</b><div class="org"><span class="inst">MakinaRocks</span> · High-frequency sensor time-series forecasting &amp; real-time inference optimization (Expert Research Personnel)</div></div><div class="when">Jun 2022 – Feb 2024</div></div>
+<div class="entry"><div class="what"><b>Machine Learning Engineer</b><div class="org"><span class="inst">MakinaRocks</span> · High-frequency sensor time-series forecasting &amp; real-time inference optimization (Expert Research Personnel)</div></div><div class="when">Jun 2022 – Mar 2024</div></div>
 <div class="entry"><div class="what"><b>Medical AI Researcher</b><div class="org"><span class="inst">Asan Medical Center (MI2RL)</span> · Generative anomaly detection for emergency brain CT triage &amp; 3D latent diffusion</div></div><div class="when">Mar 2020 – Jun 2022</div></div>
 
 <h2>Education</h2>
